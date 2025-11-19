@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "why": "Warum Ich",
+    "services": "Dienstleistungen",
+    "portfolio": "Portfolio",
+    "testimonials": "Referenzen",
+    "pricing": "Preise",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "Hochkonvertierende Landing Pages, Die Klicks In Kunden Verwandeln",
+    "subheading": "Websites und Funnels gebaut mit React, KI-Tools und modernen Design-Prinzipien.",
+    "ctaConsultation": "Kostenlose Beratung",
+    "ctaPortfolio": "Portfolio Ansehen"
+  },
+  "why": {
+    "title": "Warum Mich Wählen",
+    "feature1": {
+      "title": "Schnelle Lieferung",
+      "description": "Erhalten Sie Ihre Landing Page in 3-7 Tagen mit Premium-Qualität und Liebe zum Detail."
+    },
+    "feature2": {
+      "title": "Modernes Responsive Design",
+      "description": "Schöne, Mobile-First-Designs, die einwandfrei auf allen Geräten und Bildschirmgrößen funktionieren."
+    },
+    "feature3": {
+      "title": "KI-Optimierte Texte & UX",
+      "description": "Konversionsorientierte Botschaften mit KI-Tools für maximale Wirkung und Ergebnisse."
+    }
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "subtitle": "Umfassende Lösungen für Ihre digitale Präsenz",
+    "service1": {
+      "title": "Landing Page Erstellung",
+      "description": "Maßgeschneiderte Landing Pages mit React, CMS oder modernen Web-Buildern nach Ihren Bedürfnissen."
+    },
+    "service2": {
+      "title": "Marke & Visuelle Identität",
+      "description": "Komplettes Marken-Setup mit Logo, Farbpalette, Typografie und Style-Guide."
+    },
+    "service3": {
+      "title": "KI-Textgestaltung",
+      "description": "Konversionsorientierte Botschaften und Texte, optimiert für Engagement und Aktion."
+    },
+    "service4": {
+      "title": "Optimierung & Analytics",
+      "description": "Vollständige Seitenoptimierung mit Analytics-Tracking-Setup für datengesteuerte Entscheidungen."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Aktuelle Projekte, die Ergebnisse liefern",
+    "project1": {
+      "title": "SmartFit Pro X Landing",
+      "description": "Moderne Fitness-Produkt-Landing-Page mit konversionsoptimiertem Design und flüssigen Animationen."
+    },
+    "project2": {
+      "title": "Wiener Personal Trainer",
+      "description": "Professionelle Personal-Training-Website mit Buchungssystem und Kundenbewertungen."
+    },
+    "project3": {
+      "title": "IT Karriere Mentoring",
+      "description": "Mentoring-Plattform Landing Page mit mehrsprachiger Unterstützung und dynamischen Content-Bereichen."
+    },
+    "ctaDemo": "Live Demo Öffnen"
+  },
+  "testimonials": {
+    "title": "Was Kunden Sagen",
+    "subtitle": "Vertraut von Unternehmen weltweit",
+    "client1": {
+      "name": "Michael Schmidt",
+      "role": "CEO, TechStart GmbH",
+      "quote": "Hervorragende Arbeit! Die Landing Page erhöhte unsere Conversion-Rate um 45% in nur zwei Wochen. Äußerst professionell und reaktionsschnell."
+    },
+    "client2": {
+      "name": "Sarah Johnson",
+      "role": "Marketing Direktorin, FitLife",
+      "quote": "Außergewöhnliche Qualität und Liebe zum Detail. Die KI-optimierten Texte haben wirklich einen Unterschied in unserer Botschaft gemacht."
+    },
+    "client3": {
+      "name": "Viktor Novak",
+      "role": "Gründer, DigitalWave",
+      "quote": "Schnelle Lieferung, modernes Design und großartige Kommunikation während des gesamten Projekts. Würde definitiv wieder zusammenarbeiten."
+    }
+  },
+  "pricing": {
+    "title": "Preispläne",
+    "subtitle": "Wählen Sie das Paket, das zu Ihnen passt",
+    "starter": {
+      "name": "Starter",
+      "price": "€129-199",
+      "features": [
+        "Einzelne Landing Page",
+        "Responsive Design",
+        "Basis-SEO-Setup",
+        "Kontaktformular",
+        "7 Tage Lieferung"
+      ],
+      "cta": "Jetzt Starten"
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "€299-499",
+      "popular": "Am Beliebtesten",
+      "features": [
+        "Landing Page + 2 Bereiche",
+        "Erweitertes Responsive Design",
+        "Vollständige SEO-Optimierung",
+        "KI-Textgestaltung",
+        "Analytics-Setup",
+        "5 Tage Lieferung"
+      ],
+      "cta": "Standard Wählen"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "€699-999",
+      "features": [
+        "Komplette Website (bis zu 5 Seiten)",
+        "Premium-Design + Animationen",
+        "Markenidentitäts-Paket",
+        "KI-gestützte UX-Optimierung",
+        "Erweiterte Analytics + A/B-Tests",
+        "Prioritäts-Support",
+        "3 Tage Lieferung"
+      ],
+      "cta": "Pro Wählen"
+    }
+  },
+  "contact": {
+    "title": "Lassen Sie Uns Zusammenarbeiten",
+    "subtitle": "Starten Sie Ihr Projekt heute",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "message": "Erzählen Sie mir von Ihrem Projekt",
+      "send": "Nachricht Senden"
+    },
+    "whatsapp": "WhatsApp",
+    "phone": "Anrufen"
+  },
+  "footer": {
+    "tagline": "Premium Landing Pages, die konvertieren",
+    "rights": "Alle Rechte vorbehalten",
+    "built": "Erstellt mit React & Tailwind CSS"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Početna",
+    "why": "Zašto Ja",
+    "services": "Usluge",
+    "portfolio": "Portfolio",
+    "testimonials": "Utisci",
+    "pricing": "Cene",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "Konverziono Optimizovane Landing Stranice Koje Klikove Pretvaraju U Kupce",
+    "subheading": "Veb stranice i funneli napravljeni sa React-om, AI alatima i modernim dizajn principima.",
+    "ctaConsultation": "Besplatna Konsultacija",
+    "ctaPortfolio": "Pogledaj Portfolio"
+  },
+  "why": {
+    "title": "Zašto Izabrati Mene",
+    "feature1": {
+      "title": "Brza Isporuka",
+      "description": "Dobijte svoju landing stranicu za 3-7 dana sa premium kvalitetom i pažnjom na detalje."
+    },
+    "feature2": {
+      "title": "Moderan Responzivan Dizajn",
+      "description": "Prelepi, mobile-first dizajni koji besprekorno funkcionišu na svim uređajima i veličinama ekrana."
+    },
+    "feature3": {
+      "title": "AI-Optimizovan Tekst & UX",
+      "description": "Poruke fokusirane na konverziju uz pomoć AI alata za maksimalan uticaj i rezultate."
+    }
+  },
+  "services": {
+    "title": "Usluge",
+    "subtitle": "Sveobuhvatna rešenja za vašu digitalnu prisutnost",
+    "service1": {
+      "title": "Izrada Landing Stranica",
+      "description": "Prilagođene landing stranice napravljene sa React-om, CMS-om ili modernim web builderima po vašim potrebama."
+    },
+    "service2": {
+      "title": "Brend & Vizuelni Identitet",
+      "description": "Kompletan brend setup uključujući logo, palete boja, tipografiju i style guide."
+    },
+    "service3": {
+      "title": "AI Pisanje Tekstova",
+      "description": "Poruke i tekstovi optimizovani za konverziju, angažovanje i akciju."
+    },
+    "service4": {
+      "title": "Optimizacija & Analitika",
+      "description": "Potpuna optimizacija stranice sa analytics tracking setupom za odluke zasnovane na podacima."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Nedavni projekti koji donose rezultate",
+    "project1": {
+      "title": "SmartFit Pro X Landing",
+      "description": "Moderna fitness proizvod landing stranica sa konverziono optimizovanim dizajnom i glatkim animacijama."
+    },
+    "project2": {
+      "title": "Bečki Lični Trener",
+      "description": "Profesionalna web stranica za lične trenere sa sistemom za rezervacije i utiscima klijenata."
+    },
+    "project3": {
+      "title": "IT Karijera Mentorstvo",
+      "description": "Landing stranica mentorske platforme sa višejezičkom podrškom i dinamičkim content sekcijama."
+    },
+    "ctaDemo": "Otvori Live Demo"
+  },
+  "testimonials": {
+    "title": "Šta Klijenti Kažu",
+    "subtitle": "Pouzdanje preduzeća širom sveta",
+    "client1": {
+      "name": "Michael Schmidt",
+      "role": "CEO, TechStart GmbH",
+      "quote": "Izvanredan rad! Landing stranica je povećala našu konverzionu stopu za 45% za samo dve nedelje. Izuzetno profesionalno i responzivno."
+    },
+    "client2": {
+      "name": "Sarah Johnson",
+      "role": "Marketing Direktor, FitLife",
+      "quote": "Izuzetna kvalitet i pažnja na detalje. AI-optimizovan tekst je zaista napravio razliku u našim porukama."
+    },
+    "client3": {
+      "name": "Viktor Novak",
+      "role": "Osnivač, DigitalWave",
+      "quote": "Brza isporuka, moderan dizajn i odlična komunikacija tokom projekta. Definitivno bih ponovo sarađivao."
+    }
+  },
+  "pricing": {
+    "title": "Cenovni Paketi",
+    "subtitle": "Izaberite paket koji odgovara vašim potrebama",
+    "starter": {
+      "name": "Početni",
+      "price": "€129-199",
+      "features": [
+        "Pojedinačna landing stranica",
+        "Responzivan dizajn",
+        "Osnovni SEO setup",
+        "Kontakt forma",
+        "7 dana isporuka"
+      ],
+      "cta": "Započni"
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "€299-499",
+      "popular": "Najpopularniji",
+      "features": [
+        "Landing stranica + 2 sekcije",
+        "Napredni responzivan dizajn",
+        "Potpuna SEO optimizacija",
+        "AI pisanje tekstova",
+        "Analytics setup",
+        "5 dana isporuka"
+      ],
+      "cta": "Izaberi Standard"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "€699-999",
+      "features": [
+        "Kompletna web stranica (do 5 stranica)",
+        "Premium dizajn + animacije",
+        "Paket brend identiteta",
+        "AI-powered UX optimizacija",
+        "Napredna analitika + A/B testiranje",
+        "Prioritetna podrška",
+        "3 dana isporuka"
+      ],
+      "cta": "Idi Pro"
+    }
+  },
+  "contact": {
+    "title": "Hajde Da Sarađujemo",
+    "subtitle": "Započnite svoj projekat danas",
+    "form": {
+      "name": "Vaše Ime",
+      "email": "Vaš Email",
+      "message": "Recite mi o svom projektu",
+      "send": "Pošalji Poruku"
+    },
+    "whatsapp": "WhatsApp",
+    "phone": "Pozovi Me"
+  },
+  "footer": {
+    "tagline": "Premium landing stranice koje konvertuju",
+    "rights": "Sva prava zadržana",
+    "built": "Napravljeno sa React & Tailwind CSS"
+  }
+}

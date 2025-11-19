@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Kezdőlap",
+    "why": "Miért én",
+    "services": "Szolgáltatások",
+    "portfolio": "Portfólió",
+    "testimonials": "Vélemények",
+    "pricing": "Árak",
+    "contact": "Kapcsolat"
+  },
+  "hero": {
+    "headline": "Konverzióra Optimalizált Landing Oldalak, Amik Kattintásokat Vásárlókká Alakítanak",
+    "subheading": "Weboldalak és funnelek React-tel, AI-eszközökkel és modern design elvekkel építve.",
+    "ctaConsultation": "Ingyenes Konzultáció",
+    "ctaPortfolio": "Portfólió Megtekintése"
+  },
+  "why": {
+    "title": "Miért Válassz Engem",
+    "feature1": {
+      "title": "Gyors Leadás",
+      "description": "Prémium minőségű landing oldalad 3-7 napon belül kész, a részletekre való odafigyeléssel."
+    },
+    "feature2": {
+      "title": "Modern Reszponzív Design",
+      "description": "Gyönyörű, mobile-first dizájnok, amik hibátlanul működnek minden eszközön és képernyőméretben."
+    },
+    "feature3": {
+      "title": "AI-Optimalizált Szöveg & UX",
+      "description": "Konverzióra fókuszált üzenetközlés AI-eszközökkel a maximális hatás és eredmények érdekében."
+    }
+  },
+  "services": {
+    "title": "Szolgáltatások",
+    "subtitle": "Átfogó megoldások digitális jelenlétedhez",
+    "service1": {
+      "title": "Landing Oldal Készítés",
+      "description": "Egyedi landing oldalak React-tel, CMS-el vagy modern web builderekkel, igényeidre szabva."
+    },
+    "service2": {
+      "title": "Brand & Vizuális Identitás",
+      "description": "Teljes márka felépítés logóval, színpalettával, tipográfiával és stílus útmutatóval."
+    },
+    "service3": {
+      "title": "AI Szövegírás",
+      "description": "Konverzióra optimalizált üzenetek és szövegek, amik elkötelezettségre és cselekvésre késztetnek."
+    },
+    "service4": {
+      "title": "Optimalizálás & Analitika",
+      "description": "Teljes oldal optimalizálás analitikai követéssel az adatalapú döntésekhez."
+    }
+  },
+  "portfolio": {
+    "title": "Portfólió",
+    "subtitle": "Friss projektek, amik eredményeket hoznak",
+    "project1": {
+      "title": "SmartFit Pro X Landing",
+      "description": "Modern fitness termék landing oldal konverzióra optimalizált dizájnnal és sima animációkkal."
+    },
+    "project2": {
+      "title": "Bécsi Személyi Edző",
+      "description": "Professzionális személyi edzői weboldal foglalási rendszerrel és ügyfél véleményekkel."
+    },
+    "project3": {
+      "title": "IT Karrier Mentoring",
+      "description": "Mentoring platform landing oldal többnyelvű támogatással és dinamikus tartalmi szekciókkal."
+    },
+    "ctaDemo": "Élő Demo Megnyitása"
+  },
+  "testimonials": {
+    "title": "Mit Mondanak Az Ügyfelek",
+    "subtitle": "Vállalkozások megbíznak bennem világszerte",
+    "client1": {
+      "name": "Schmidt Mihály",
+      "role": "CEO, TechStart GmbH",
+      "quote": "Kiváló munka! A landing oldal 45%-kal növelte konverziós rátánkat mindössze két hét alatt. Rendkívül professzionális és reagáló."
+    },
+    "client2": {
+      "name": "Johnson Sarah",
+      "role": "Marketing Igazgató, FitLife",
+      "quote": "Kivételes minőség és a részletekre való odafigyelés. Az AI-optimalizált szöveg valóban különbséget tett az üzeneteinkben."
+    },
+    "client3": {
+      "name": "Novák Viktor",
+      "role": "Alapító, DigitalWave",
+      "quote": "Gyors leadás, modern dizájn és remek kommunikáció a projekt során. Határozottan újra együtt dolgoznék."
+    }
+  },
+  "pricing": {
+    "title": "Árcsomagok",
+    "subtitle": "Válaszd ki az igényeidhez illő csomagot",
+    "starter": {
+      "name": "Kezdő",
+      "price": "€129-199",
+      "features": [
+        "Egyetlen landing oldal",
+        "Reszponzív dizájn",
+        "Alap SEO beállítás",
+        "Kapcsolati űrlap",
+        "7 napos leadás"
+      ],
+      "cta": "Kezdjük El"
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "€299-499",
+      "popular": "Legnépszerűbb",
+      "features": [
+        "Landing oldal + 2 szekció",
+        "Fejlett reszponzív dizájn",
+        "Teljes SEO optimalizálás",
+        "AI szövegírás",
+        "Analitika beállítás",
+        "5 napos leadás"
+      ],
+      "cta": "Standard Csomag"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "€699-999",
+      "features": [
+        "Komplett weboldal (max 5 oldal)",
+        "Prémium dizájn + animációk",
+        "Brand identitás csomag",
+        "AI-alapú UX optimalizálás",
+        "Fejlett analitika + A/B tesztelés",
+        "Prioritásos támogatás",
+        "3 napos leadás"
+      ],
+      "cta": "Pro Csomag"
+    }
+  },
+  "contact": {
+    "title": "Dolgozzunk Együtt",
+    "subtitle": "Kezdd el a projektedet még ma",
+    "form": {
+      "name": "Neved",
+      "email": "Email Címed",
+      "message": "Mesélj a projektedről",
+      "send": "Üzenet Küldése"
+    },
+    "whatsapp": "WhatsApp",
+    "phone": "Hívj Fel"
+  },
+  "footer": {
+    "tagline": "Prémium landing oldalak, amik konvertálnak",
+    "rights": "Minden jog fenntartva",
+    "built": "React & Tailwind CSS-sel készült"
+  }
+}

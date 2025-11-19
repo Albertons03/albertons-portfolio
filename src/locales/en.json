@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "home": "Home",
+    "why": "Why Me",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "High-Converting Landing Pages That Turn Clicks Into Customers",
+    "subheading": "Websites and funnels built with React, AI-tools and modern design principles.",
+    "ctaConsultation": "Free Consultation",
+    "ctaPortfolio": "View Portfolio"
+  },
+  "why": {
+    "title": "Why Choose Me",
+    "feature1": {
+      "title": "Fast Delivery",
+      "description": "Get your landing page ready in 3-7 days with premium quality and attention to detail."
+    },
+    "feature2": {
+      "title": "Modern Responsive Design",
+      "description": "Beautiful, mobile-first designs that work flawlessly on all devices and screen sizes."
+    },
+    "feature3": {
+      "title": "AI-Optimized Copy & UX",
+      "description": "Conversion-focused messaging powered by AI tools for maximum impact and results."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Comprehensive solutions for your digital presence",
+    "service1": {
+      "title": "Landing Page Creation",
+      "description": "Custom landing pages built with React, CMS, or modern web builders tailored to your needs."
+    },
+    "service2": {
+      "title": "Brand & Visual Identity",
+      "description": "Complete brand setup including logo, color palette, typography, and style guide."
+    },
+    "service3": {
+      "title": "AI Copywriting",
+      "description": "Conversion-focused messaging and copy optimized for engagement and action."
+    },
+    "service4": {
+      "title": "Optimization & Analytics",
+      "description": "Full page optimization with analytics tracking setup for data-driven decisions."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Recent projects that drive results",
+    "project1": {
+      "title": "SmartFit Pro X Landing",
+      "description": "Modern fitness product landing page with conversion-optimized design and smooth animations."
+    },
+    "project2": {
+      "title": "Vienna Personal Trainer",
+      "description": "Professional personal training website with booking system and client testimonials."
+    },
+    "project3": {
+      "title": "IT Career Mentoring",
+      "description": "Mentoring platform landing page with multilingual support and dynamic content sections."
+    },
+    "ctaDemo": "Open Live Demo"
+  },
+  "testimonials": {
+    "title": "What Clients Say",
+    "subtitle": "Trusted by businesses worldwide",
+    "client1": {
+      "name": "Michael Schmidt",
+      "role": "CEO, TechStart GmbH",
+      "quote": "Outstanding work! The landing page increased our conversion rate by 45% in just two weeks. Highly professional and responsive."
+    },
+    "client2": {
+      "name": "Sarah Johnson",
+      "role": "Marketing Director, FitLife",
+      "quote": "Exceptional quality and attention to detail. The AI-optimized copy really made a difference in our messaging."
+    },
+    "client3": {
+      "name": "Viktor Novak",
+      "role": "Founder, DigitalWave",
+      "quote": "Fast delivery, modern design, and great communication throughout the project. Would definitely work together again."
+    }
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": "Choose the package that fits your needs",
+    "starter": {
+      "name": "Starter",
+      "price": "€129-199",
+      "features": [
+        "Single landing page",
+        "Responsive design",
+        "Basic SEO setup",
+        "Contact form",
+        "7 days delivery"
+      ],
+      "cta": "Get Started"
+    },
+    "standard": {
+      "name": "Standard",
+      "price": "€299-499",
+      "popular": "Most Popular",
+      "features": [
+        "Landing page + 2 sections",
+        "Advanced responsive design",
+        "Full SEO optimization",
+        "AI copywriting",
+        "Analytics setup",
+        "5 days delivery"
+      ],
+      "cta": "Choose Standard"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "€699-999",
+      "features": [
+        "Complete website (up to 5 pages)",
+        "Premium design + animations",
+        "Brand identity package",
+        "AI-powered UX optimization",
+        "Advanced analytics + A/B testing",
+        "Priority support",
+        "3 days delivery"
+      ],
+      "cta": "Go Pro"
+    }
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Get your project started today",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Tell me about your project",
+      "send": "Send Message"
+    },
+    "whatsapp": "WhatsApp",
+    "phone": "Call Me"
+  },
+  "footer": {
+    "tagline": "Premium landing pages that convert",
+    "rights": "All rights reserved",
+    "built": "Built with React & Tailwind CSS"
+  }
+}
