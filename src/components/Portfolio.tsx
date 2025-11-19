@@ -38,7 +38,7 @@ const Portfolio = () => {
         "/projects/personal-training6.png",
         "/projects/personal-training7.png",
       ],
-      videoUrl: undefined,
+      videoUrl: "https://www.loom.com/embed/a4f1bf5b67b545f39df11cf169ad7a34",
       demoUrl: "https://vienna-personal-trainer.vercel.app",
       tags: ["React", "i18n", "Responsive"],
     },
@@ -54,14 +54,17 @@ const Portfolio = () => {
         "/projects/career-coach6.png",
         "/projects/career-coach7.png",
       ],
-      videoUrl: undefined,
+      videoUrl: "https://www.loom.com/embed/3e0b5415188a4c08a8f07df56aa3a5ab",
       demoUrl: "https://career-code-coach-94db.vercel.app",
       tags: ["React", "Multilingual", "Shadcn/ui"],
     },
   ];
 
   return (
-    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+    <section
+      id="portfolio"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
@@ -112,7 +115,9 @@ const Portfolio = () => {
                         <SwiperSlide key={imgIndex}>
                           <img
                             src={image}
-                            alt={`${project.title} - Screenshot ${imgIndex + 1}`}
+                            alt={`${project.title} - Screenshot ${
+                              imgIndex + 1
+                            }`}
                             className="w-full h-full object-cover"
                             onError={(e) => {
                               e.currentTarget.src =
