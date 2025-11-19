@@ -58,14 +58,14 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("portfolio.title")}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t("portfolio.subtitle")}
           </p>
         </div>
@@ -75,7 +75,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn"
+              className="group bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Project Image Carousel */}
@@ -109,14 +109,14 @@ const Portfolio = () => {
 
                 {/* Custom Navigation Buttons */}
                 <button
-                  className={`swiper-button-prev-${index} absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white shadow-lg`}
+                  className={`swiper-button-prev-${index} absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white dark:bg-gray-900/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white dark:bg-gray-900 shadow-lg`}
                 >
-                  <ChevronLeft className="w-5 h-5 text-gray-900" />
+                  <ChevronLeft className="w-5 h-5 text-gray-900 dark:text-white" />
                 </button>
                 <button
-                  className={`swiper-button-next-${index} absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white shadow-lg`}
+                  className={`swiper-button-next-${index} absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white dark:bg-gray-900/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white dark:bg-gray-900 shadow-lg`}
                 >
-                  <ChevronRight className="w-5 h-5 text-gray-900" />
+                  <ChevronRight className="w-5 h-5 text-gray-900 dark:text-white" />
                 </button>
 
                 {/* Overlay on Hover */}
@@ -125,7 +125,7 @@ const Portfolio = () => {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors pointer-events-auto"
+                    className="flex items-center space-x-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors pointer-events-auto"
                   >
                     <span>{t("portfolio.ctaDemo")}</span>
                     <ExternalLink className="w-4 h-4" />
@@ -148,12 +148,12 @@ const Portfolio = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                   {project.description}
                 </p>
 

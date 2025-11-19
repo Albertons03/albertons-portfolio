@@ -1,5 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { Heart, Github, Linkedin, Mail, Instagram, Facebook } from "lucide-react";
+import {
+  Heart,
+  Github,
+  Linkedin,
+  Mail,
+  Instagram,
+  Facebook,
+} from "lucide-react";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -51,7 +58,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div>
             <h3 className="text-2xl font-bold mb-4">Albertons Studio</h3>
-            <p className="text-gray-400 mb-4">{t("footer.tagline")}</p>
+            <p className="text-gray-400 dark:text-gray-500 mb-4">{t("footer.tagline")}</p>
             <p className="text-sm text-gray-500">{t("footer.built")}</p>
           </div>
 
@@ -63,7 +70,7 @@ const Footer = () => {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -104,7 +111,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400 dark:text-gray-500">
           <p>
             © {currentYear} Albertons Studio. {t("footer.rights")}.
           </p>

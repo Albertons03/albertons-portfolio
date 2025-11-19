@@ -50,14 +50,14 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("pricing.title")}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t("pricing.subtitle")}
           </p>
         </div>
@@ -69,10 +69,10 @@ const Pricing = () => {
             return (
               <div
                 key={index}
-                className={`relative bg-white rounded-2xl p-8 transition-all duration-300 animate-fadeIn ${
+                className={`relative bg-white dark:bg-gray-900 rounded-2xl p-8 transition-all duration-300 animate-fadeIn ${
                   isPopular
                     ? "border-2 border-primary shadow-2xl transform scale-105 bg-gradient-to-br from-blue-50/50 to-cyan-50/50"
-                    : "border-2 border-gray-200 hover:border-primary/50 shadow-lg hover:shadow-xl"
+                    : "border-2 border-gray-200 dark:border-gray-700 hover:border-primary/50 shadow-lg hover:shadow-xl"
                 }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -87,13 +87,13 @@ const Pricing = () => {
                 )}
 
                 {/* Plan Name */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   {plan.name}
                 </h3>
 
                 {/* Price */}
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-gray-900">
+                  <span className="text-4xl font-bold text-gray-900 dark:text-white">
                     {plan.price}
                   </span>
                 </div>
@@ -108,7 +108,7 @@ const Pricing = () => {
                       <div className="flex-shrink-0 w-5 h-5 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
                         <Check className="w-3 h-3 text-primary" />
                       </div>
-                      <span className="text-gray-600 text-sm leading-relaxed">
+                      <span className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                         {feature}
                       </span>
                     </li>
@@ -121,7 +121,7 @@ const Pricing = () => {
                   className={`block w-full text-center py-4 rounded-lg font-semibold transition-all duration-300 ${
                     isPopular
                       ? "bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl"
-                      : "bg-gray-100 text-gray-900 hover:bg-gray-200"
+                      : "bg-gray-100 text-gray-900 dark:text-white hover:bg-gray-200"
                   }`}
                 >
                   {plan.cta}

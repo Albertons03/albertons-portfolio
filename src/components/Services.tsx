@@ -34,15 +34,15 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("services.title")}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t("services.subtitle")}
           </p>
         </div>
@@ -54,7 +54,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn border border-gray-100 hover:border-blue-200"
+                className="group bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn border border-gray-100 dark:border-gray-800 hover:border-blue-200"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Icon with Gradient */}
@@ -65,12 +65,12 @@ const Services = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   {service.description}
                 </p>
               </div>

@@ -107,15 +107,15 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-cyan-50"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("contact.title")}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t("contact.subtitle")}
           </p>
         </div>
@@ -128,7 +128,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
                 >
                   {t("contact.form.name")}
                 </label>
@@ -139,7 +139,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 rounded-lg border-2 ${
-                    errors.name ? "border-red-500" : "border-gray-200"
+                    errors.name ? "border-red-500" : "border-gray-200 dark:border-gray-700"
                   } focus:border-primary focus:outline-none transition-colors`}
                   placeholder="John Doe"
                 />
@@ -152,7 +152,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
                 >
                   {t("contact.form.email")}
                 </label>
@@ -163,7 +163,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 rounded-lg border-2 ${
-                    errors.email ? "border-red-500" : "border-gray-200"
+                    errors.email ? "border-red-500" : "border-gray-200 dark:border-gray-700"
                   } focus:border-primary focus:outline-none transition-colors`}
                   placeholder="john@example.com"
                 />
@@ -176,7 +176,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
                 >
                   {t("contact.form.message")}
                 </label>
@@ -187,7 +187,7 @@ const Contact = () => {
                   onChange={handleChange}
                   rows={6}
                   className={`w-full px-4 py-3 rounded-lg border-2 ${
-                    errors.message ? "border-red-500" : "border-gray-200"
+                    errors.message ? "border-red-500" : "border-gray-200 dark:border-gray-700"
                   } focus:border-primary focus:outline-none transition-colors resize-none`}
                   placeholder="I need a landing page for..."
                 />
@@ -259,41 +259,41 @@ const Contact = () => {
               href="https://wa.me/436608216865"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-green-500"
+              className="group flex items-center space-x-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-green-500"
             >
               <div className="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                 <MessageCircle className="w-7 h-7 text-green-600" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-1">
                   {t("contact.whatsapp")}
                 </h3>
-                <p className="text-gray-600 text-sm">Quick response, 24/7</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">Quick response, 24/7</p>
               </div>
             </a>
 
             {/* Phone */}
             <a
               href="tel:+436608216865"
-              className="group flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-blue-500"
+              className="group flex items-center space-x-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-blue-500"
             >
               <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Phone className="w-7 h-7 text-blue-600" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-1">
                   {t("contact.phone")}
                 </h3>
-                <p className="text-gray-600 text-sm">+43 660 821 6865</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">+43 660 821 6865</p>
               </div>
             </a>
 
             {/* Additional Info Card */}
             <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl border-2 border-blue-200">
-              <h3 className="font-bold text-gray-900 mb-3">
+              <h3 className="font-bold text-gray-900 dark:text-white mb-3">
                 💡 Free Consultation
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                 Not sure what you need? Book a free 30-minute consultation and
                 let's discuss your project goals.
               </p>

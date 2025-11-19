@@ -7,25 +7,25 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden"
+      className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 relative overflow-hidden transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center animate-fadeIn">
           {/* Badge */}
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-100 to-cyan-100 text-primary px-4 py-2 rounded-full mb-8 border border-blue-200">
+          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 text-primary px-4 py-2 rounded-full mb-8 border border-blue-200 dark:border-blue-700">
             <Sparkles className="w-4 h-4" />
             <span className="text-sm font-medium">Albertons Studio</span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(59,130,246,0.3)]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(59,130,246,0.3)]">
               {t("hero.headline")}
             </span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto">
             {t("hero.subheading")}
           </p>
 
@@ -41,7 +41,7 @@ const Hero = () => {
 
             <a
               href="#portfolio"
-              className="inline-flex items-center space-x-2 bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold border-2 border-gray-200 hover:border-primary hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg"
+              className="inline-flex items-center space-x-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-8 py-4 rounded-lg font-semibold border-2 border-gray-200 dark:border-gray-700 hover:border-primary hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg"
             >
               <span>{t("hero.ctaPortfolio")}</span>
             </a>

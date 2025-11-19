@@ -29,11 +29,11 @@ const WhyChooseMe = () => {
   ];
 
   return (
-    <section id="why" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="why" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("why.title")}
           </h2>
         </div>
@@ -45,7 +45,7 @@ const WhyChooseMe = () => {
             return (
               <div
                 key={index}
-                className="group p-8 rounded-2xl border-2 border-gray-100 hover:border-primary/30 hover:bg-gradient-to-br hover:from-blue-50/50 hover:to-cyan-50/50 transition-all duration-300 hover:shadow-xl animate-fadeIn"
+                className="group p-8 rounded-2xl border-2 border-gray-100 dark:border-gray-800 hover:border-primary/30 hover:bg-gradient-to-br hover:from-blue-50/50 hover:to-cyan-50/50 transition-all duration-300 hover:shadow-xl animate-fadeIn"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Icon */}
@@ -56,12 +56,12 @@ const WhyChooseMe = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {feature.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   {feature.description}
                 </p>
               </div>

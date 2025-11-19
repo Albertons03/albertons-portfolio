@@ -28,15 +28,15 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("testimonials.title")}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             {t("testimonials.subtitle")}
           </p>
         </div>
@@ -46,7 +46,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn relative border-t-4 border-blue-500"
+              className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn relative border-t-4 border-blue-500"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Quote Icon */}
@@ -70,11 +70,11 @@ const Testimonials = () => {
               </p>
 
               {/* Client Info */}
-              <div className="border-t border-gray-200 pt-6">
-                <h4 className="font-bold text-gray-900 mb-1">
+              <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
+                <h4 className="font-bold text-gray-900 dark:text-white mb-1">
                   {testimonial.name}
                 </h4>
-                <p className="text-sm text-gray-600">{testimonial.role}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300">{testimonial.role}</p>
               </div>
             </div>
           ))}
