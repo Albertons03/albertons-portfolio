@@ -256,7 +256,7 @@ const Contact = () => {
           >
             {/* WhatsApp */}
             <a
-              href="https://wa.me/YOUR_PHONE_NUMBER" // TODO: Add WhatsApp number
+              href="https://wa.me/436608216865"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-green-500"
@@ -274,7 +274,7 @@ const Contact = () => {
 
             {/* Phone */}
             <a
-              href="tel:+YOUR_PHONE_NUMBER" // TODO: Add phone number
+              href="tel:+436608216865"
               className="group flex items-center space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-blue-500"
             >
               <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -284,7 +284,7 @@ const Contact = () => {
                 <h3 className="font-bold text-gray-900 mb-1">
                   {t("contact.phone")}
                 </h3>
-                <p className="text-gray-600 text-sm">+36 XX XXX XXXX</p>
+                <p className="text-gray-600 text-sm">+43 660 821 6865</p>
               </div>
             </a>
 

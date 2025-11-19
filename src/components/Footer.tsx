@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Heart, Github, Linkedin, Mail } from "lucide-react";
+import { Heart, Github, Linkedin, Mail, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -18,17 +18,27 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/YOUR_USERNAME", // TODO: Add GitHub URL
+      href: "https://github.com/Albertons03",
       label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/YOUR_USERNAME", // TODO: Add LinkedIn URL
+      href: "https://www.linkedin.com/in/albertons-juhasz-7053a4397/",
       label: "LinkedIn",
     },
     {
+      icon: Instagram,
+      href: "https://www.instagram.com/alberto.juhasz/",
+      label: "Instagram",
+    },
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/profile.php?id=100004694597813",
+      label: "Facebook",
+    },
+    {
       icon: Mail,
-      href: "mailto:your.email@example.com", // TODO: Add email
+      href: "mailto:johnwickk0868@gmail.com",
       label: "Email",
     },
   ];
