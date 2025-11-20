@@ -50,7 +50,10 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+    <section
+      id="pricing"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fadeIn">
@@ -121,7 +124,7 @@ const Pricing = () => {
                   className={`block w-full text-center py-4 rounded-lg font-semibold transition-all duration-300 ${
                     isPopular
                       ? "bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl"
-                      : "bg-gray-100 text-gray-900 dark:text-white hover:bg-gray-200"
+                      : "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
                   }`}
                 >
                   {plan.cta}

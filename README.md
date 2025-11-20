@@ -28,7 +28,7 @@ Professional portfolio website showcasing premium landing pages and web developm
 
 ## 🌐 Live Demo
 
-Visit the live site: [albertons-portfolio.vercel.app](https://albertons-portfolio.vercel.app)
+Visit the live site: [landingbits.com](https://landingbits.com)
 
 ## 📂 Project Structure
 
@@ -102,7 +102,7 @@ npm run preview
 
 ## 📧 Contact
 
-- **Email**: johnwickk0868@gmail.com
+- **Email**: albertons@landingbits.com
 - **WhatsApp**: +43 660 821 6865
 - **LinkedIn**: [Albertons Juhasz](https://www.linkedin.com/in/albertons-juhasz-7053a4397/)
 - **Instagram**: [@alberto.juhasz](https://www.instagram.com/alberto.juhasz/)

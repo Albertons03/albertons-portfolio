@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Calendar } from "lucide-react";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a
               href="#contact"
               className="group inline-flex items-center space-x-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
@@ -44,6 +44,21 @@ const Hero = () => {
               className="inline-flex items-center space-x-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-8 py-4 rounded-lg font-semibold border-2 border-gray-200 dark:border-gray-700 hover:border-primary hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg"
             >
               <span>{t("hero.ctaPortfolio")}</span>
+            </a>
+          </div>
+
+          {/* Calendly CTA Banner */}
+          <div className="inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-blue-600/10 to-cyan-600/10 dark:from-blue-400/10 dark:to-cyan-400/10 border-2 border-blue-200 dark:border-blue-800 rounded-2xl px-6 py-4 animate-fadeIn backdrop-blur-sm">
+            <Calendar className="w-5 h-5 text-primary" />
+            <span className="text-gray-700 dark:text-gray-300 font-medium">
+              Hiring me for your next project?
+            </span>
+            <a
+              href="#contact"
+              className="text-primary font-bold hover:underline inline-flex items-center space-x-1 group"
+            >
+              <span>Book a call</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
 

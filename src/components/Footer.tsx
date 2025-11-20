@@ -45,7 +45,7 @@ const Footer = () => {
     },
     {
       icon: Mail,
-      href: "mailto:johnwickk0868@gmail.com",
+      href: "mailto:albertons@landingbits.com",
       label: "Email",
     },
   ];
