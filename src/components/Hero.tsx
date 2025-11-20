@@ -24,6 +24,11 @@ const Hero = () => {
             </span>
           </h1>
 
+          {/* Starting Price Badge */}
+          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-green-100 to-emerald-100 dark:from-green-900/30 dark:to-emerald-900/30 text-green-700 dark:text-green-400 px-6 py-3 rounded-full mb-6 border-2 border-green-200 dark:border-green-700 shadow-md">
+            <span className="text-lg font-bold">Starting from $129</span>
+          </div>
+
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto">
             {t("hero.subheading")}
