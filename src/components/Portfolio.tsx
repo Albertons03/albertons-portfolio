@@ -11,6 +11,43 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "AI-Powered Customer Support SaaS",
+      description:
+        "Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.",
+      images: [],
+      videoUrl: "https://www.loom.com/embed/77b5675cabaf46fa94b71b821b54a0a8",
+      demoUrl: "https://vercel.com/albertons03s-projects/customer-support-saas",
+      tags: [
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "FastAPI",
+        "Supabase",
+        "OpenAI API",
+      ],
+      github: "https://github.com/Albertons03/customer-support-Saas",
+      caseStudy: {
+        problem:
+          "Customer support teams struggle to provide 24/7 instant answers and store all chat history reliably.",
+        solution:
+          "Developed a SaaS platform where users can chat with an AI assistant anytime, with all conversations securely saved and searchable.",
+        techStack: [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "FastAPI",
+          "Supabase",
+          "OpenAI API",
+        ],
+        results: [
+          "AI responds instantly, 24/7",
+          "All messages are saved and searchable",
+          "Easy integration for any business website",
+          "Built-in analytics for support quality",
+        ],
+      },
+    },
+    {
       title: t("portfolio.project1.title"),
       description: t("portfolio.project1.description"),
       images: [
@@ -26,16 +63,24 @@ const Portfolio = () => {
       demoUrl: "https://smart-fit-pro.vercel.app",
       tags: ["React", "TypeScript", "Tailwind CSS"],
       caseStudy: {
-        problem: "Fitness centers struggled with outdated booking systems, leading to missed appointments and poor user experience on mobile devices.",
-        solution: "Built a modern, mobile-first fitness booking platform with real-time class scheduling, membership management, and intuitive UI/UX design.",
-        techStack: ["React", "TypeScript", "Tailwind CSS", "Vite", "Responsive Design"],
+        problem:
+          "Fitness centers struggled with outdated booking systems, leading to missed appointments and poor user experience on mobile devices.",
+        solution:
+          "Built a modern, mobile-first fitness booking platform with real-time class scheduling, membership management, and intuitive UI/UX design.",
+        techStack: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vite",
+          "Responsive Design",
+        ],
         results: [
           "Page load time reduced to 1.8 seconds",
           "Mobile conversion rate increased by +340%",
           "Booking completion rate improved by +65%",
-          "User session duration increased by +120%"
-        ]
-      }
+          "User session duration increased by +120%",
+        ],
+      },
     },
     {
       title: t("portfolio.project2.title"),
@@ -53,16 +98,24 @@ const Portfolio = () => {
       demoUrl: "https://vienna-personal-trainer.vercel.app",
       tags: ["React", "i18n", "Responsive"],
       caseStudy: {
-        problem: "Personal trainers in Vienna needed multilingual websites to reach international clients, but lacked technical expertise and budget for custom development.",
-        solution: "Created a fully multilingual landing page with German, English, Hungarian, and Serbian support, featuring automated contact forms and SEO optimization.",
-        techStack: ["React", "i18next", "Responsive Design", "Web3Forms", "SEO"],
+        problem:
+          "Personal trainers in Vienna needed multilingual websites to reach international clients, but lacked technical expertise and budget for custom development.",
+        solution:
+          "Created a fully multilingual landing page with German, English, Hungarian, and Serbian support, featuring automated contact forms and SEO optimization.",
+        techStack: [
+          "React",
+          "i18next",
+          "Responsive Design",
+          "Web3Forms",
+          "SEO",
+        ],
         results: [
           "Reached 4 language markets simultaneously",
           "Lead generation increased by +280%",
           "Mobile traffic conversion up +190%",
-          "Average session time: 3.2 minutes"
-        ]
-      }
+          "Average session time: 3.2 minutes",
+        ],
+      },
     },
     {
       title: t("portfolio.project3.title"),
@@ -80,16 +133,24 @@ const Portfolio = () => {
       demoUrl: "https://career-code-coach-94db.vercel.app",
       tags: ["React", "Multilingual", "Shadcn/ui"],
       caseStudy: {
-        problem: "Career coaching services struggled to showcase credibility and convert website visitors into paying clients due to generic landing pages.",
-        solution: "Developed a professional landing page with testimonial sections, service breakdowns, pricing transparency, and conversion-optimized CTAs using modern UI components.",
-        techStack: ["React", "TypeScript", "Shadcn/ui", "Tailwind CSS", "i18next"],
+        problem:
+          "Career coaching services struggled to showcase credibility and convert website visitors into paying clients due to generic landing pages.",
+        solution:
+          "Developed a professional landing page with testimonial sections, service breakdowns, pricing transparency, and conversion-optimized CTAs using modern UI components.",
+        techStack: [
+          "React",
+          "TypeScript",
+          "Shadcn/ui",
+          "Tailwind CSS",
+          "i18next",
+        ],
         results: [
           "Consultation booking rate up +410%",
           "Page load time: 1.6 seconds",
           "Bounce rate decreased by -45%",
-          "Email capture rate increased by +230%"
-        ]
-      }
+          "Email capture rate increased by +230%",
+        ],
+      },
     },
   ];
 
@@ -265,30 +326,51 @@ const Portfolio = () => {
                         <span>Results</span>
                       </h4>
                       <ul className="space-y-1">
-                        {project.caseStudy.results.map((result, resultIndex) => (
-                          <li
-                            key={resultIndex}
-                            className="text-xs text-gray-600 dark:text-gray-400 flex items-start space-x-2"
-                          >
-                            <span className="text-green-500 mt-0.5">•</span>
-                            <span>{result}</span>
-                          </li>
-                        ))}
+                        {project.caseStudy.results.map(
+                          (result, resultIndex) => (
+                            <li
+                              key={resultIndex}
+                              className="text-xs text-gray-600 dark:text-gray-400 flex items-start space-x-2"
+                            >
+                              <span className="text-green-500 mt-0.5">•</span>
+                              <span>{result}</span>
+                            </li>
+                          )
+                        )}
                       </ul>
                     </div>
                   </div>
                 )}
 
-                {/* CTA Link */}
-                <a
-                  href={project.demoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-primary font-semibold hover:underline"
-                >
-                  <span>{t("portfolio.ctaDemo")}</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+                {/* CTA Links */}
+                <div className="flex flex-wrap gap-3 items-center mt-2">
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 text-primary font-semibold hover:underline"
+                  >
+                    <span>{t("portfolio.ctaDemo")}</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 text-gray-500 dark:text-gray-300 font-semibold hover:text-primary hover:underline transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="w-5 h-5"
+                      >
+                        <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

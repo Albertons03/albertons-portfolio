@@ -96,9 +96,12 @@ npm run preview
 
 ## 🎨 Featured Projects
 
-1. **SmartFit Pro X** - Fitness landing page with modern animations
-2. **Vienna Personal Trainer** - Multilingual personal training website
-3. **Career Code Coach** - Professional career coaching platform
+1. **AI-Powered Customer Support SaaS**  
+   [Live Demo](https://vercel.com/albertons03s-projects/customer-support-saas) · [GitHub](https://github.com/Albertons03/customer-support-Saas)  
+   Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.
+2. **SmartFit Pro X** - Fitness landing page with modern animations
+3. **Vienna Personal Trainer** - Multilingual personal training website
+4. **Career Code Coach** - Professional career coaching platform
 
 ## 📧 Contact
 
