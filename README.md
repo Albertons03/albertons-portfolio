@@ -99,9 +99,12 @@ npm run preview
 1. **AI-Powered Customer Support SaaS**  
    [Live Demo](https://vercel.com/albertons03s-projects/customer-support-saas) · [GitHub](https://github.com/Albertons03/customer-support-Saas)  
    Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.
-2. **SmartFit Pro X** - Fitness landing page with modern animations
-3. **Vienna Personal Trainer** - Multilingual personal training website
-4. **Career Code Coach** - Professional career coaching platform
+2. **Marketing Analytics with AI Chatbot**  
+   [Live Demo](https://marketing-analitycs-nwkm2bk4v-albertons03s-projects.vercel.app) · [GitHub (private)](https://github.com/Albertons03/marketing-analitycs)  
+   Analytics dashboard and AI chatbot for marketing teams. Ask questions, get instant insights, and visualize your data. Built with FastAPI, OpenAI, React, Supabase, Tailwind, deployed on Vercel & Railway.
+3. **SmartFit Pro X** - Fitness landing page with modern animations
+4. **Vienna Personal Trainer** - Multilingual personal training website
+5. **Career Code Coach** - Professional career coaching platform
 
 ## 📧 Contact
 

@@ -48,6 +48,46 @@ const Portfolio = () => {
       },
     },
     {
+      title: "Marketing Analytics with AI Chatbot",
+      description:
+        "Analytics dashboard and AI chatbot for marketing teams. Ask questions, get instant insights, and visualize your data. Built with FastAPI, OpenAI, React, Supabase, Tailwind, deployed on Vercel & Railway.",
+      images: [],
+      videoUrl: "https://www.loom.com/embed/16d4dd470f7147e9aaed40e43287e2a3",
+      demoUrl:
+        "https://marketing-analitycs-nwkm2bk4v-albertons03s-projects.vercel.app",
+      tags: [
+        "React",
+        "FastAPI",
+        "OpenAI",
+        "Supabase",
+        "Tailwind",
+        "Vercel",
+        "Railway",
+      ],
+      github: "https://github.com/Albertons03/marketing-analitycs",
+      caseStudy: {
+        problem:
+          "Marketing teams need fast, AI-powered answers from their data, but most dashboards are slow and require manual work.",
+        solution:
+          "Built a dashboard where users can chat with an AI to get instant analytics, charts, and actionable insights from their marketing data.",
+        techStack: [
+          "React",
+          "FastAPI",
+          "OpenAI",
+          "Supabase",
+          "Tailwind",
+          "Vercel",
+          "Railway",
+        ],
+        results: [
+          "AI chatbot answers marketing questions in seconds",
+          "Data visualizations update in real time",
+          "Secure, scalable backend with Supabase & Railway",
+          "Private GitHub repo (contact for access)",
+        ],
+      },
+    },
+    {
       title: t("portfolio.project1.title"),
       description: t("portfolio.project1.description"),
       images: [
