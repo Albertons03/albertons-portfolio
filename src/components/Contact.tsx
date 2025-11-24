@@ -288,7 +288,7 @@ const Contact = () => {
             </a>
 
             {/* Additional Info Card */}
-            <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl border-2 border-blue-200">
+            <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 rounded-xl border-2 border-blue-200 dark:border-gray-700">
               <h3 className="font-bold text-gray-900 dark:text-white mb-3">
                 💡 Free Consultation
               </h3>

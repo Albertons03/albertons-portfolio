@@ -58,7 +58,9 @@ const Footer = () => {
           {/* Brand Section */}
           <div>
             <h3 className="text-2xl font-bold mb-4">Albertons Studio</h3>
-            <p className="text-gray-400 dark:text-gray-500 mb-4">{t("footer.tagline")}</p>
+            <p className="text-gray-400 dark:text-gray-500 mb-4">
+              {t("footer.tagline")}
+            </p>
             <p className="text-sm text-gray-500">{t("footer.built")}</p>
           </div>
 
@@ -102,7 +104,7 @@ const Footer = () => {
             <div className="mt-6">
               <a
                 href="#contact"
-                className="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                className="inline-block bg-primary text-white dark:!bg-white dark:!text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 dark:hover:bg-gray-200 transition-colors"
               >
                 {t("contact.title")}
               </a>

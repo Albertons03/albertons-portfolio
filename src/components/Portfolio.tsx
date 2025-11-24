@@ -53,8 +53,7 @@ const Portfolio = () => {
         "Analytics dashboard and AI chatbot for marketing teams. Ask questions, get instant insights, and visualize your data. Built with FastAPI, OpenAI, React, Supabase, Tailwind, deployed on Vercel & Railway.",
       images: [],
       videoUrl: "https://www.loom.com/embed/16d4dd470f7147e9aaed40e43287e2a3",
-      demoUrl:
-        "https://marketing-analitycs-nwkm2bk4v-albertons03s-projects.vercel.app",
+      demoUrl: "https://marketing-analitycs.vercel.app",
       tags: [
         "React",
         "FastAPI",
