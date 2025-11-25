@@ -16,7 +16,7 @@ const Portfolio = () => {
         "Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.",
       images: [],
       videoUrl: "https://www.loom.com/embed/77b5675cabaf46fa94b71b821b54a0a8",
-      demoUrl: "customer-support-saas.vercel.app",
+      demoUrl: "https://customer-support-saas.vercel.app",
       tags: [
         "React",
         "TypeScript",
