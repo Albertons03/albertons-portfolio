@@ -7,24 +7,38 @@ import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Terms from "./components/Terms";
-import Privacy from "./components/Privacy";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <Navbar />
-      <Hero />
-      <WhyChooseMe />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Pricing />
-      <Contact />
-      <Footer />
-      <Terms />
-      <Privacy />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300 flex flex-col">
+        <Navbar />
+        <div className="flex-1">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <WhyChooseMe />
+                  <Services />
+                  <Portfolio />
+                  <Testimonials />
+                  <Pricing />
+                  <Contact />
+                </>
+              }
+            />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

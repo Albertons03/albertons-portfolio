@@ -20,6 +20,8 @@ const Footer = () => {
     { href: "#testimonials", label: t("nav.testimonials") },
     { href: "#pricing", label: t("nav.pricing") },
     { href: "#contact", label: t("nav.contact") },
+    { href: "/terms", label: "Terms" },
+    { href: "/privacy", label: "Privacy" },
   ];
 
   const socialLinks = [
@@ -73,6 +75,7 @@ const Footer = () => {
                   <a
                     href={link.href}
                     className="text-gray-400 dark:text-gray-500 hover:text-white transition-colors"
+                    {...(link.href.startsWith("/") ? { target: "_self" } : {})}
                   >
                     {link.label}
                   </a>
