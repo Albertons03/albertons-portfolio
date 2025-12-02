@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ArrowRight, Sparkles, Calendar } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 
 const Hero = () => {
   const { t } = useTranslation();
