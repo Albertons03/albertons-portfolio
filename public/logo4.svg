@@ -1,0 +1,28 @@
+<svg width="240" height="80" viewBox="0 0 240 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E0FF"/>
+      <stop offset="100%" stop-color="#8B00FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- AS monogram villámmal -->
+  <path d="M20 62 L20 18 L44 18 L52 30 L38 46 L50 62 L44 72 Z 
+           M44 18 Q62 18 62 32 T50 46" 
+        stroke="url(#glow)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Albertons Studio szöveg – ultra-tiszta, modern sans (Inter / Satoshi / Neue Montreal stílus) -->
+  <text x="82" y="50" font-family=" system-ui, -apple-system, sans-serif" 
+        font-size="36" font-weight="700" letter-spacing="-1" fill="#0F0F0F">
+    Albertons
+  </text>
+  <text x="82" y="50" font-family=" system-ui, -apple-system, sans-serif" 
+        font-size="36" font-weight="700" letter-spacing="-1" fill="none" stroke="url(#glow)" stroke-width="2">
+    Albertons
+  </text>
+
+  <text x="195" y="50" font-family=" system-ui, -apple-system, sans-serif" 
+        font-size="24" font-weight="500" fill="#666">
+    Studio
+  </text>
+</svg>

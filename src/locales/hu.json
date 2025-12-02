@@ -134,9 +134,17 @@
     "subtitle": "Kezdd el a projektedet még ma",
     "form": {
       "name": "Neved",
-      "email": "Email Címed",
-      "message": "Mesélj a projektedről",
-      "send": "Üzenet Küldése"
+      "email": "Email címed",
+      "projectGoal": "Mi a projekt célja?",
+      "pagesNeeded": "Milyen oldalak kellenek?",
+      "features": "Milyen funkciók?",
+      "hasDomain": "Van domain/hosting?",
+      "hasDomainYes": "Igen",
+      "hasDomainNo": "Nem",
+      "exampleSites": "Példa oldalak (linkek)",
+      "deadline": "Határidő",
+      "notes": "Extra megjegyzés",
+      "send": "Üzenet küldése"
     },
     "whatsapp": "WhatsApp",
     "phone": "Hívj Fel"

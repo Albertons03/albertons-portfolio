@@ -8,12 +8,24 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
+    projectGoal: "",
+    pagesNeeded: "",
+    features: "",
+    hasDomain: "",
+    exampleSites: "",
+    deadline: "",
+    notes: "",
   });
   const [errors, setErrors] = useState({
     name: "",
     email: "",
-    message: "",
+    projectGoal: "",
+    pagesNeeded: "",
+    features: "",
+    hasDomain: "",
+    exampleSites: "",
+    deadline: "",
+    notes: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -40,10 +52,23 @@ const Contact = () => {
       isValid = false;
     }
 
-    if (formData.message.trim().length < 10) {
-      newErrors.message = "Message must be at least 10 characters";
+    if (formData.projectGoal.trim().length < 5) {
+      newErrors.projectGoal = "Please describe your project goal";
       isValid = false;
     }
+    if (formData.pagesNeeded.trim().length < 2) {
+      newErrors.pagesNeeded = "Please specify needed pages";
+      isValid = false;
+    }
+    if (formData.features.trim().length < 2) {
+      newErrors.features = "Please specify features";
+      isValid = false;
+    }
+    if (!formData.hasDomain) {
+      newErrors.hasDomain = "Please select an option";
+      isValid = false;
+    }
+    // exampleSites, deadline, notes are optional
 
     setErrors(newErrors);
 
@@ -62,10 +87,16 @@ const Contact = () => {
       ); // TODO: Add your key here
       formDataToSend.append("name", formData.name);
       formDataToSend.append("email", formData.email);
-      formDataToSend.append("message", formData.message);
+      formDataToSend.append("projectGoal", formData.projectGoal);
+      formDataToSend.append("pagesNeeded", formData.pagesNeeded);
+      formDataToSend.append("features", formData.features);
+      formDataToSend.append("hasDomain", formData.hasDomain);
+      formDataToSend.append("exampleSites", formData.exampleSites);
+      formDataToSend.append("deadline", formData.deadline);
+      formDataToSend.append("notes", formData.notes);
       formDataToSend.append(
         "subject",
-        "New Portfolio Contact from " + formData.name
+        "New Project Request from " + formData.name
       );
       // Disable spam filter for testing
       formDataToSend.append("botcheck", "");
@@ -80,7 +111,17 @@ const Contact = () => {
           if (data.success) {
             setIsSubmitting(false);
             setIsSuccess(true);
-            setFormData({ name: "", email: "", message: "" });
+            setFormData({
+              name: "",
+              email: "",
+              projectGoal: "",
+              pagesNeeded: "",
+              features: "",
+              hasDomain: "",
+              exampleSites: "",
+              deadline: "",
+              notes: "",
+            });
             setTimeout(() => setIsSuccess(false), 5000);
           } else {
             throw new Error(data.message);
@@ -144,7 +185,7 @@ const Contact = () => {
                       ? "border-red-500"
                       : "border-gray-200 dark:border-gray-700"
                   } focus:border-primary focus:outline-none transition-colors`}
-                  placeholder="John Doe"
+                  placeholder={t("contact.form.name")}
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -170,37 +211,190 @@ const Contact = () => {
                       ? "border-red-500"
                       : "border-gray-200 dark:border-gray-700"
                   } focus:border-primary focus:outline-none transition-colors`}
-                  placeholder="john@example.com"
+                  placeholder={t("contact.form.email")}
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                 )}
               </div>
 
-              {/* Message Textarea */}
+              {/* Project Goal */}
               <div>
                 <label
-                  htmlFor="message"
+                  htmlFor="projectGoal"
                   className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
                 >
-                  {t("contact.form.message")}
+                  {t("contact.form.projectGoal")}
                 </label>
                 <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
+                  id="projectGoal"
+                  name="projectGoal"
+                  value={formData.projectGoal}
                   onChange={handleChange}
-                  rows={6}
+                  rows={2}
                   className={`w-full px-4 py-3 rounded-lg border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 ${
-                    errors.message
+                    errors.projectGoal
                       ? "border-red-500"
                       : "border-gray-200 dark:border-gray-700"
                   } focus:border-primary focus:outline-none transition-colors resize-none`}
-                  placeholder="I need a landing page for..."
+                  placeholder={t("contact.form.projectGoal")}
                 />
-                {errors.message && (
-                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                {errors.projectGoal && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.projectGoal}
+                  </p>
                 )}
+              </div>
+
+              {/* Pages Needed */}
+              <div>
+                <label
+                  htmlFor="pagesNeeded"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  {t("contact.form.pagesNeeded")}
+                </label>
+                <input
+                  type="text"
+                  id="pagesNeeded"
+                  name="pagesNeeded"
+                  value={formData.pagesNeeded}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 rounded-lg border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 ${
+                    errors.pagesNeeded
+                      ? "border-red-500"
+                      : "border-gray-200 dark:border-gray-700"
+                  } focus:border-primary focus:outline-none transition-colors`}
+                  placeholder={t("contact.form.pagesNeeded")}
+                />
+                {errors.pagesNeeded && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.pagesNeeded}
+                  </p>
+                )}
+              </div>
+
+              {/* Features */}
+              <div>
+                <label
+                  htmlFor="features"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  {t("contact.form.features")}
+                </label>
+                <input
+                  type="text"
+                  id="features"
+                  name="features"
+                  value={formData.features}
+                  onChange={handleChange}
+                  className={`w-full px-4 py-3 rounded-lg border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 ${
+                    errors.features
+                      ? "border-red-500"
+                      : "border-gray-200 dark:border-gray-700"
+                  } focus:border-primary focus:outline-none transition-colors`}
+                  placeholder={t("contact.form.features")}
+                />
+                {errors.features && (
+                  <p className="text-red-500 text-sm mt-1">{errors.features}</p>
+                )}
+              </div>
+
+              {/* Domain/Hosting */}
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                  {t("contact.form.hasDomain")}
+                </label>
+                <div className="flex space-x-4">
+                  <label className="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasDomain"
+                      value="Igen"
+                      checked={formData.hasDomain === "Igen"}
+                      onChange={handleChange}
+                      className="form-radio text-primary focus:ring-primary"
+                    />
+                    <span className="ml-2">
+                      {t("contact.form.hasDomainYes")}
+                    </span>
+                  </label>
+                  <label className="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="hasDomain"
+                      value="Nem"
+                      checked={formData.hasDomain === "Nem"}
+                      onChange={handleChange}
+                      className="form-radio text-primary focus:ring-primary"
+                    />
+                    <span className="ml-2">
+                      {t("contact.form.hasDomainNo")}
+                    </span>
+                  </label>
+                </div>
+                {errors.hasDomain && (
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.hasDomain}
+                  </p>
+                )}
+              </div>
+
+              {/* Example Sites */}
+              <div>
+                <label
+                  htmlFor="exampleSites"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  {t("contact.form.exampleSites")}
+                </label>
+                <input
+                  type="text"
+                  id="exampleSites"
+                  name="exampleSites"
+                  value={formData.exampleSites}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 border-gray-200 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
+                  placeholder={t("contact.form.exampleSites")}
+                />
+              </div>
+
+              {/* Deadline */}
+              <div>
+                <label
+                  htmlFor="deadline"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  {t("contact.form.deadline")}
+                </label>
+                <input
+                  type="text"
+                  id="deadline"
+                  name="deadline"
+                  value={formData.deadline}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 border-gray-200 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors"
+                  placeholder={t("contact.form.deadline")}
+                />
+              </div>
+
+              {/* Notes */}
+              <div>
+                <label
+                  htmlFor="notes"
+                  className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                >
+                  {t("contact.form.notes")}
+                </label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  value={formData.notes}
+                  onChange={handleChange}
+                  rows={2}
+                  className="w-full px-4 py-3 rounded-lg border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 border-gray-200 dark:border-gray-700 focus:border-primary focus:outline-none transition-colors resize-none"
+                  placeholder={t("contact.form.notes")}
+                />
               </div>
 
               {/* Honeypot - Hidden field for spam protection */}

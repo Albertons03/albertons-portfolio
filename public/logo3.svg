@@ -1,0 +1,19 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lightning" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7B00FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- A bal oldala + villám -->
+  <path d="M18 62 L18 18 L38 18 L44 28 L32 40 L44 52 L38 62 Z" 
+        stroke="url(#lightning)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- S íve, ami folytatja a villám energiáját -->
+  <path d="M38 28 Q50 20, 62 28 T62 40" 
+        stroke="url(#lightning)" stroke-width="7" stroke-linecap="round"/>
+
+  <path d="M38 52 Q50 60, 62 52" 
+        stroke="url(#lightning)" stroke-width="7" stroke-linecap="round"/>
+</svg>
