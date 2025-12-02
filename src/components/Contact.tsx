@@ -38,7 +38,17 @@ const Contact = () => {
     e.preventDefault();
 
     // Reset errors
-    const newErrors = { name: "", email: "", message: "" };
+    const newErrors = {
+      name: "",
+      email: "",
+      projectGoal: "",
+      pagesNeeded: "",
+      features: "",
+      hasDomain: "",
+      exampleSites: "",
+      deadline: "",
+      notes: "",
+    };
     let isValid = true;
 
     // Validation
