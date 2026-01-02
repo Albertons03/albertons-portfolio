@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Menu, X, Globe, Sun, Moon } from "lucide-react";
 import { useTheme } from "../hooks/use-theme";
 

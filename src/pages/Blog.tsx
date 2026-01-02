@@ -4,8 +4,6 @@ import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
 import { blogPosts } from "../data/blogPosts";
 
 const Blog = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 pt-24 pb-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +75,7 @@ const Blog = () => {
 
         {/* Blog Posts Grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.slice(1).map((post, index) => (
+          {blogPosts.slice(1).map((post) => (
             <article
               key={post.slug}
               className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
