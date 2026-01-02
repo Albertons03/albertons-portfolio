@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
 import { blogPosts } from "../data/blogPosts";
