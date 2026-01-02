@@ -1,0 +1,114 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-trends" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45b7d1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-ai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-sustainable" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38ef7d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card-brutalist" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#666666;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-trends)"/>
+  
+  <!-- Geometric pattern -->
+  <defs>
+    <pattern id="hexagon" width="60" height="52" patternUnits="userSpaceOnUse">
+      <polygon points="30,4 50,17 50,35 30,48 10,35 10,17" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#hexagon)"/>
+  
+  <!-- Main title -->
+  <text x="400" y="80" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="38" font-weight="800">Landing Page Design</text>
+  <text x="400" y="120" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="42" font-weight="800">TRENDS 2025</text>
+  <text x="400" y="150" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="18" font-weight="400">What's Coming Next</text>
+  
+  <!-- Trend cards -->
+  <!-- AI-Powered Card -->
+  <rect x="80" y="200" width="200" height="140" rx="16" fill="url(#card-ai)" opacity="0.95"/>
+  <circle cx="100" cy="220" r="8" fill="rgba(255,255,255,0.9)"/>
+  <text x="120" y="228" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="700">🤖 AI-Powered</text>
+  <text x="100" y="250" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-weight="500">Personalization</text>
+  <text x="100" y="268" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">Dynamic content adaptation</text>
+  <text x="100" y="282" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">based on user behavior</text>
+  <rect x="100" y="300" width="80" height="20" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="140" y="313" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">+35% CVR</text>
+  
+  <!-- Sustainable Card -->
+  <rect x="300" y="200" width="200" height="140" rx="16" fill="url(#card-sustainable)" opacity="0.95"/>
+  <circle cx="320" cy="220" r="8" fill="rgba(255,255,255,0.9)"/>
+  <text x="340" y="228" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="700">🌱 Sustainable</text>
+  <text x="320" y="250" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-weight="500">Green Design</text>
+  <text x="320" y="268" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">Eco-friendly messaging</text>
+  <text x="320" y="282" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">& minimal resource usage</text>
+  <rect x="320" y="300" width="80" height="20" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="360" y="313" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">Fast Load</text>
+  
+  <!-- Brutalist Card -->
+  <rect x="520" y="200" width="200" height="140" rx="16" fill="url(#card-brutalist)" opacity="0.95"/>
+  <rect x="540" y="218" width="12" height="12" fill="white"/>
+  <text x="560" y="228" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="700">Brutalist</text>
+  <text x="540" y="250" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-weight="500">Minimalism</text>
+  <text x="540" y="268" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">Bold, high-contrast</text>
+  <text x="540" y="282" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">design that commands</text>
+  <rect x="540" y="300" width="80" height="20" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="580" y="313" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">Attention</text>
+  
+  <!-- Second row -->
+  <!-- Mobile-First Card -->
+  <rect x="80" y="360" width="200" height="140" rx="16" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <circle cx="100" cy="380" r="8" fill="rgba(255,255,255,0.9)"/>
+  <text x="120" y="388" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="700">📱 Mobile-First</text>
+  <text x="100" y="410" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-weight="500">Touch Interactions</text>
+  <text x="100" y="428" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">Thumb-zone navigation</text>
+  <text x="100" y="442" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">& swipe gestures</text>
+  <rect x="100" y="460" width="80" height="20" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="140" y="473" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">70% Traffic</text>
+  
+  <!-- 3D Elements Card -->
+  <rect x="300" y="360" width="200" height="140" rx="16" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <circle cx="320" cy="380" r="8" fill="rgba(255,255,255,0.9)"/>
+  <text x="340" y="388" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="700">🔮 3D Elements</text>
+  <text x="320" y="410" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-weight="500">Immersive Experience</text>
+  <text x="320" y="428" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">WebGL & CSS transforms</text>
+  <text x="320" y="442" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">for spatial design</text>
+  <rect x="320" y="460" width="80" height="20" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="360" y="473" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">Future</text>
+  
+  <!-- Real-time Social Proof Card -->
+  <rect x="520" y="360" width="200" height="140" rx="16" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <circle cx="540" cy="380" r="8" fill="rgba(255,255,255,0.9)"/>
+  <text x="560" y="388" fill="white" font-family="Inter, sans-serif" font-size="16" font-weight="700">📊 Live Proof</text>
+  <text x="540" y="410" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="13" font-weight="500">Real-time Credibility</text>
+  <text x="540" y="428" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">Dynamic user counters</text>
+  <text x="540" y="442" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-size="11">& activity streams</text>
+  <rect x="540" y="460" width="80" height="20" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <text x="580" y="473" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="10" font-weight="600">Trust</text>
+  
+  <!-- Bottom stats -->
+  <text x="400" y="540" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Inter, sans-serif" font-size="18" font-weight="600">January 2025 • Fresh Insights</text>
+  <text x="400" y="565" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Inter, sans-serif" font-size="14">Implementation Guide • Performance Impact • Code Examples</text>
+  
+  <!-- Decorative floating elements -->
+  <circle cx="750" cy="100" r="3" fill="rgba(255,255,255,0.4)" opacity="0.8">
+    <animate attributeName="cy" values="100;120;100" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="50" cy="300" r="2" fill="rgba(255,255,255,0.3)" opacity="0.6">
+    <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="450" r="4" fill="rgba(255,255,255,0.5)" opacity="0.7">
+    <animate attributeName="cy" values="450;470;450" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

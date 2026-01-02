@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Globe, Sun, Moon } from "lucide-react";
 import { useTheme } from "../hooks/use-theme";
 
@@ -25,6 +26,7 @@ const Navbar = () => {
     { href: "#portfolio", label: t("nav.portfolio") },
     { href: "#testimonials", label: t("nav.testimonials") },
     { href: "#pricing", label: t("nav.pricing") },
+    { href: "/blog", label: "Blog", isExternal: true },
     { href: "#contact", label: t("nav.contact") },
   ];
 
@@ -61,15 +63,25 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isExternal ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
 
             {/* Dark Mode Toggle */}
             <button
@@ -135,16 +147,27 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
           <div className="px-4 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isExternal ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
 
             {/* Mobile Dark Mode Toggle */}
             <button
