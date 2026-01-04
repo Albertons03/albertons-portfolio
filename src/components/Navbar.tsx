@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Globe, Sun, Moon } from "lucide-react";
 import { useTheme } from "../hooks/use-theme";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
   const { theme, toggleTheme } = useTheme();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
@@ -18,6 +19,8 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isOnBlogPage = location.pathname.startsWith("/blog");
 
   const navLinks = [
     { href: "#home", label: t("nav.home") },
@@ -57,9 +60,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="#home" className="text-2xl font-bold text-primary">
-            Albertons Studio
-          </a>
+          {isOnBlogPage ? (
+            <Link to="/#home" className="text-2xl font-bold text-primary">
+              Albertons Studio
+            </Link>
+          ) : (
+            <a href="#home" className="text-2xl font-bold text-primary">
+              Albertons Studio
+            </a>
+          )}
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -68,6 +77,14 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   to={link.href}
+                  className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {link.label}
+                </Link>
+              ) : isOnBlogPage ? (
+                <Link
+                  key={link.href}
+                  to={`/${link.href}`}
                   className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium"
                 >
                   {link.label}
@@ -152,6 +169,15 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
+                >
+                  {link.label}
+                </Link>
+              ) : isOnBlogPage ? (
+                <Link
+                  key={link.href}
+                  to={`/${link.href}`}
                   onClick={() => setIsOpen(false)}
                   className="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
                 >

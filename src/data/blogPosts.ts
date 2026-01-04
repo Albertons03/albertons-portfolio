@@ -459,7 +459,7 @@ const LiveSocialProof = () => {
       
       <p>The future of landing page design is here – let's make sure you're ahead of the curve.</p>
     `,
-    coverImage: "/blog/landing-page-design-trends-2025.svg",
+    coverImage: "/blog/blog1.png",
     publishDate: "January 2, 2026",
     readTime: 18,
     category: "Trends",
@@ -1337,7 +1337,7 @@ const trackSaaSEvents = {
       
       <p>From freemium positioning to enterprise trust signals, let's build a landing page that turns visitors into customers and customers into advocates.</p>
     `,
-    coverImage: "/blog/saas-landing-page-best-practices-2025.svg",
+    coverImage: "/blog/Blog2.png",
     publishDate: "January 2, 2026",
     readTime: 22,
     category: "Guide",
@@ -2100,7 +2100,7 @@ async def get_projects(user_id: str):
 
       <p>Want to see the complete code? Check out the GitHub repository, or if you'd like me to build a similar SaaS application for your business, let's discuss your requirements!</p>
     `,
-    coverImage: "/blog/react-fastapi-tutorial.svg",
+    coverImage: "/blog/Blog3.png",
     publishDate: "January 2, 2026",
     readTime: 15,
     category: "Tutorial",
