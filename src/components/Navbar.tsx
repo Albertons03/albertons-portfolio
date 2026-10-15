@@ -24,9 +24,8 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "#home", label: t("nav.home") },
-    { href: "#why", label: t("nav.why") },
-    { href: "#services", label: t("nav.services") },
-    { href: "#portfolio", label: t("nav.portfolio") },
+    { href: "#why", label: t("nav.about") },
+    { href: "#portfolio", label: t("nav.projects") },
     { href: "/blog", label: "Blog", isExternal: true },
     { href: "#contact", label: t("nav.contact") },
   ];

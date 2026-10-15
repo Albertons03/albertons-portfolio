@@ -1,18 +1,16 @@
 {
   "nav": {
     "home": "Home",
-    "why": "Why Me",
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "testimonials": "Testimonials",
-    "pricing": "Pricing",
+    "about": "About",
+    "projects": "Projects",
+    "techStack": "Tech Stack",
     "contact": "Contact"
   },
   "hero": {
-    "headline": "High-Converting Landing Pages That Turn Clicks Into Customers",
-    "subheading": "Websites and funnels built with React, AI-tools and modern design principles.",
-    "ctaConsultation": "Free Consultation",
-    "ctaPortfolio": "View Portfolio"
+    "headline": "Full-Stack & AI Application Developer",
+    "subheading": "I build full-stack web applications, AI-powered tools, and data-driven dashboards using React, Next.js, TypeScript, and Python.",
+    "ctaProjects": "View Projects",
+    "ctaGithub": "View GitHub"
   },
   "why": {
     "title": "Why Choose Me",

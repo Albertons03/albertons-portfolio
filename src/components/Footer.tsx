@@ -14,9 +14,9 @@ const Footer = () => {
 
   const navLinks = [
     { href: "#home", label: t("nav.home") },
-    { href: "#why", label: t("nav.why") },
-    { href: "#services", label: t("nav.services") },
-    { href: "#portfolio", label: t("nav.portfolio") },
+    { href: "#why", label: t("nav.about") },
+    { href: "#portfolio", label: t("nav.projects") },
+    { href: "/blog", label: "Blog" },
     { href: "#contact", label: t("nav.contact") },
     { href: "/terms", label: "Terms" },
     { href: "/privacy", label: "Privacy" },

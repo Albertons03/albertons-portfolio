@@ -1,18 +1,16 @@
 {
   "nav": {
     "home": "Startseite",
-    "why": "Warum Ich",
-    "services": "Dienstleistungen",
-    "portfolio": "Portfolio",
-    "testimonials": "Referenzen",
-    "pricing": "Preise",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "techStack": "Technologien",
     "contact": "Kontakt"
   },
   "hero": {
-    "headline": "Hochkonvertierende Landing Pages, Die Klicks In Kunden Verwandeln",
-    "subheading": "Websites und Funnels gebaut mit React, KI-Tools und modernen Design-Prinzipien.",
-    "ctaConsultation": "Kostenlose Beratung",
-    "ctaPortfolio": "Portfolio Ansehen"
+    "headline": "Full-Stack- und KI-Anwendungsentwickler",
+    "subheading": "Ich entwickle Full-Stack-Webanwendungen, KI-gestützte Tools und datengestützte Dashboards mit React, Next.js, TypeScript und Python.",
+    "ctaProjects": "Projekte ansehen",
+    "ctaGithub": "GitHub ansehen"
   },
   "why": {
     "title": "Warum Mich Wählen",

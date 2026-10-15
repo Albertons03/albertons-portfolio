@@ -1,18 +1,16 @@
 {
   "nav": {
     "home": "Početna",
-    "why": "Zašto Ja",
-    "services": "Usluge",
-    "portfolio": "Portfolio",
-    "testimonials": "Utisci",
-    "pricing": "Cene",
+    "about": "O meni",
+    "projects": "Projekti",
+    "techStack": "Tehnologije",
     "contact": "Kontakt"
   },
   "hero": {
-    "headline": "Konverziono Optimizovane Landing Stranice Koje Klikove Pretvaraju U Kupce",
-    "subheading": "Veb stranice i funneli napravljeni sa React-om, AI alatima i modernim dizajn principima.",
-    "ctaConsultation": "Besplatna Konsultacija",
-    "ctaPortfolio": "Pogledaj Portfolio"
+    "headline": "Full-stack i AI programer aplikacija",
+    "subheading": "Razvijam full-stack veb aplikacije, alate pokretane veštačkom inteligencijom i kontrolne table zasnovane na podacima koristeći React, Next.js, TypeScript i Python.",
+    "ctaProjects": "Pogledaj projekte",
+    "ctaGithub": "Pogledaj GitHub"
   },
   "why": {
     "title": "Zašto Izabrati Mene",

@@ -1,18 +1,16 @@
 {
   "nav": {
     "home": "Kezdőlap",
-    "why": "Miért én",
-    "services": "Szolgáltatások",
-    "portfolio": "Portfólió",
-    "testimonials": "Vélemények",
-    "pricing": "Árak",
+    "about": "Rólam",
+    "projects": "Projektek",
+    "techStack": "Technológiák",
     "contact": "Kapcsolat"
   },
   "hero": {
-    "headline": "Konverzióra Optimalizált Landing Oldalak, Amik Kattintásokat Vásárlókká Alakítanak",
-    "subheading": "Weboldalak és funnelek React-tel, AI-eszközökkel és modern design elvekkel építve.",
-    "ctaConsultation": "Ingyenes Konzultáció",
-    "ctaPortfolio": "Portfólió Megtekintése"
+    "headline": "Full-Stack és MI-alkalmazásfejlesztő",
+    "subheading": "React, Next.js, TypeScript és Python használatával full-stack webalkalmazásokat, MI-alapú eszközöket és adatalapú irányítópultokat fejlesztek.",
+    "ctaProjects": "Projektek megtekintése",
+    "ctaGithub": "GitHub megtekintése"
   },
   "why": {
     "title": "Miért Válassz Engem",
