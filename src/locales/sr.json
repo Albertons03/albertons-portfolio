@@ -13,38 +13,39 @@
     "ctaGithub": "Pogledaj GitHub"
   },
   "why": {
-    "title": "Zašto Izabrati Mene",
+    "title": "O meni / Inženjerski pristup",
+    "intro": "Razvijam full-stack veb aplikacije, integrišem API-je i pravim kontrolne table zasnovane na podacima sa AI funkcijama. Usredsređen sam na validaciju podataka i održivu arhitekturu aplikacija.",
     "feature1": {
-      "title": "Brza Isporuka",
-      "description": "Dobijte svoju landing stranicu za 3-7 dana sa premium kvalitetom i pažnjom na detalje."
+      "title": "Full-stack aplikacije",
+      "description": "Radim na frontend i backend delu, povezujući korisničke interfejse, logiku aplikacije i API-je."
     },
     "feature2": {
-      "title": "Moderan Responzivan Dizajn",
-      "description": "Prelepi, mobile-first dizajni koji besprekorno funkcionišu na svim uređajima i veličinama ekrana."
+      "title": "AI funkcije i podaci",
+      "description": "Pravim kontrolne table zasnovane na podacima i integrišem AI funkcije u veb aplikacije."
     },
     "feature3": {
-      "title": "AI-Optimizovan Tekst & UX",
-      "description": "Poruke fokusirane na konverziju uz pomoć AI alata za maksimalan uticaj i rezultate."
+      "title": "Validacija i održivost",
+      "description": "Koristim validaciju, testiranje i modularnu arhitekturu kako bi kod aplikacije bio razumljiv i pouzdan."
     }
   },
   "services": {
-    "title": "Usluge",
-    "subtitle": "Sveobuhvatna rešenja za vašu digitalnu prisutnost",
+    "title": "Tehnička stručnost",
+    "subtitle": "Veštine i mogućnosti prikazane kroz moje projekte",
     "service1": {
-      "title": "Izrada Landing Stranica",
-      "description": "Prilagođene landing stranice napravljene sa React-om, CMS-om ili modernim web builderima po vašim potrebama."
+      "title": "Frontend",
+      "description": "React, Next.js, TypeScript i responzivni korisnički interfejsi."
     },
     "service2": {
-      "title": "Brend & Vizuelni Identitet",
-      "description": "Kompletan brend setup uključujući logo, palete boja, tipografiju i style guide."
+      "title": "Backend i podaci",
+      "description": "Integracija API-ja, Supabase, PostgreSQL, autentifikacija i tokovi podataka."
     },
     "service3": {
-      "title": "AI Pisanje Tekstova",
-      "description": "Poruke i tekstovi optimizovani za konverziju, angažovanje i akciju."
+      "title": "AI integracija",
+      "description": "LLM API-ji, generisanje potpomognuto pretragom (RAG) i AI funkcije u aplikacijama."
     },
     "service4": {
-      "title": "Optimizacija & Analitika",
-      "description": "Potpuna optimizacija stranice sa analytics tracking setupom za odluke zasnovane na podacima."
+      "title": "Inženjerske prakse",
+      "description": "TypeScript, validacija unosa, testiranje i modularna arhitektura aplikacija."
     }
   },
   "portfolio": {
@@ -140,7 +141,7 @@
     "phone": "Pozovi Me"
   },
   "footer": {
-    "tagline": "Premium landing stranice koje konvertuju",
+    "tagline": "Full-stack razvoj aplikacija i AI rešenja",
     "rights": "Sva prava zadržana",
     "built": "Napravljeno sa React & Tailwind CSS"
   }

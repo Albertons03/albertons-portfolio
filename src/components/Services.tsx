@@ -1,30 +1,30 @@
 import { useTranslation } from "react-i18next";
-import { Layout, Palette, PenTool, TrendingUp } from "lucide-react";
+import { Monitor, Database, BrainCircuit, Blocks } from "lucide-react";
 
 const Services = () => {
   const { t } = useTranslation();
 
   const services = [
     {
-      icon: Layout,
+      icon: Monitor,
       title: t("services.service1.title"),
       description: t("services.service1.description"),
       gradient: "from-blue-500 to-cyan-500",
     },
     {
-      icon: Palette,
+      icon: Database,
       title: t("services.service2.title"),
       description: t("services.service2.description"),
       gradient: "from-purple-500 to-pink-500",
     },
     {
-      icon: PenTool,
+      icon: BrainCircuit,
       title: t("services.service3.title"),
       description: t("services.service3.description"),
       gradient: "from-orange-500 to-red-500",
     },
     {
-      icon: TrendingUp,
+      icon: Blocks,
       title: t("services.service4.title"),
       description: t("services.service4.description"),
       gradient: "from-green-500 to-emerald-500",

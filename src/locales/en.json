@@ -13,38 +13,39 @@
     "ctaGithub": "View GitHub"
   },
   "why": {
-    "title": "Why Choose Me",
+    "title": "About Me / Engineering Approach",
+    "intro": "I build full-stack web applications, integrate APIs, and create data-driven dashboards with AI features. I focus on validating data and building maintainable application architecture.",
     "feature1": {
-      "title": "Fast Delivery",
-      "description": "Get your landing page ready in 3-7 days with premium quality and attention to detail."
+      "title": "Full-Stack Applications",
+      "description": "I work across frontend and backend, connecting interfaces, application logic, and APIs."
     },
     "feature2": {
-      "title": "Modern Responsive Design",
-      "description": "Beautiful, mobile-first designs that work flawlessly on all devices and screen sizes."
+      "title": "AI and Data Features",
+      "description": "I build data-driven dashboards and integrate AI features into web applications."
     },
     "feature3": {
-      "title": "AI-Optimized Copy & UX",
-      "description": "Conversion-focused messaging powered by AI tools for maximum impact and results."
+      "title": "Validation and Maintainability",
+      "description": "I use validation, testing, and modular architecture to keep application code understandable and dependable."
     }
   },
   "services": {
-    "title": "Services",
-    "subtitle": "Comprehensive solutions for your digital presence",
+    "title": "Technical Expertise",
+    "subtitle": "Skills and capabilities demonstrated in my projects",
     "service1": {
-      "title": "Landing Page Creation",
-      "description": "Custom landing pages built with React, CMS, or modern web builders tailored to your needs."
+      "title": "Frontend",
+      "description": "React, Next.js, TypeScript, and responsive user interfaces."
     },
     "service2": {
-      "title": "Brand & Visual Identity",
-      "description": "Complete brand setup including logo, color palette, typography, and style guide."
+      "title": "Backend & Data",
+      "description": "API integration, Supabase, PostgreSQL, authentication, and data workflows."
     },
     "service3": {
-      "title": "AI Copywriting",
-      "description": "Conversion-focused messaging and copy optimized for engagement and action."
+      "title": "AI Integration",
+      "description": "LLM APIs, retrieval-augmented generation (RAG), and AI-powered application features."
     },
     "service4": {
-      "title": "Optimization & Analytics",
-      "description": "Full page optimization with analytics tracking setup for data-driven decisions."
+      "title": "Engineering Practices",
+      "description": "TypeScript, input validation, testing, and modular application architecture."
     }
   },
   "portfolio": {
@@ -148,7 +149,7 @@
     "phone": "Call Me"
   },
   "footer": {
-    "tagline": "Premium landing pages that convert",
+    "tagline": "Full-Stack & AI Application Development",
     "rights": "All rights reserved",
     "built": "Built with React & Tailwind CSS"
   }

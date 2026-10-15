@@ -1,30 +1,30 @@
 import { useTranslation } from "react-i18next";
-import { Zap, Smartphone, Sparkles } from "lucide-react";
+import { Code2, BrainCircuit, Blocks } from "lucide-react";
 
 const WhyChooseMe = () => {
   const { t } = useTranslation();
 
   const features = [
     {
-      icon: Zap,
+      icon: Code2,
       title: t("why.feature1.title"),
       description: t("why.feature1.description"),
-      color: "text-yellow-500",
-      bgColor: "bg-yellow-50",
-    },
-    {
-      icon: Smartphone,
-      title: t("why.feature2.title"),
-      description: t("why.feature2.description"),
       color: "text-blue-500",
       bgColor: "bg-blue-50",
     },
     {
-      icon: Sparkles,
-      title: t("why.feature3.title"),
-      description: t("why.feature3.description"),
+      icon: BrainCircuit,
+      title: t("why.feature2.title"),
+      description: t("why.feature2.description"),
       color: "text-purple-500",
       bgColor: "bg-purple-50",
+    },
+    {
+      icon: Blocks,
+      title: t("why.feature3.title"),
+      description: t("why.feature3.description"),
+      color: "text-green-500",
+      bgColor: "bg-green-50",
     },
   ];
 
@@ -36,6 +36,9 @@ const WhyChooseMe = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("why.title")}
           </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {t("why.intro")}
+          </p>
         </div>
 
         {/* Features Grid */}

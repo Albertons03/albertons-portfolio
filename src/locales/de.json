@@ -13,38 +13,39 @@
     "ctaGithub": "GitHub ansehen"
   },
   "why": {
-    "title": "Warum Mich Wählen",
+    "title": "Über mich / Mein Engineering-Ansatz",
+    "intro": "Ich entwickle Full-Stack-Webanwendungen, integriere APIs und erstelle datengestützte Dashboards mit KI-Funktionen. Dabei lege ich Wert auf Datenvalidierung und eine wartbare Anwendungsarchitektur.",
     "feature1": {
-      "title": "Schnelle Lieferung",
-      "description": "Erhalten Sie Ihre Landing Page in 3-7 Tagen mit Premium-Qualität und Liebe zum Detail."
+      "title": "Full-Stack-Anwendungen",
+      "description": "Ich arbeite im Frontend und Backend und verbinde Benutzeroberflächen, Anwendungslogik und APIs."
     },
     "feature2": {
-      "title": "Modernes Responsive Design",
-      "description": "Schöne, Mobile-First-Designs, die einwandfrei auf allen Geräten und Bildschirmgrößen funktionieren."
+      "title": "KI- und Datenfunktionen",
+      "description": "Ich entwickle datengestützte Dashboards und integriere KI-Funktionen in Webanwendungen."
     },
     "feature3": {
-      "title": "KI-Optimierte Texte & UX",
-      "description": "Konversionsorientierte Botschaften mit KI-Tools für maximale Wirkung und Ergebnisse."
+      "title": "Validierung und Wartbarkeit",
+      "description": "Mit Validierung, Tests und modularer Architektur halte ich Anwendungscode verständlich und zuverlässig."
     }
   },
   "services": {
-    "title": "Dienstleistungen",
-    "subtitle": "Umfassende Lösungen für Ihre digitale Präsenz",
+    "title": "Technische Kompetenzen",
+    "subtitle": "Fähigkeiten und Kenntnisse, die ich in meinen Projekten einsetze",
     "service1": {
-      "title": "Landing Page Erstellung",
-      "description": "Maßgeschneiderte Landing Pages mit React, CMS oder modernen Web-Buildern nach Ihren Bedürfnissen."
+      "title": "Frontend",
+      "description": "React, Next.js, TypeScript und responsive Benutzeroberflächen."
     },
     "service2": {
-      "title": "Marke & Visuelle Identität",
-      "description": "Komplettes Marken-Setup mit Logo, Farbpalette, Typografie und Style-Guide."
+      "title": "Backend & Daten",
+      "description": "API-Integration, Supabase, PostgreSQL, Authentifizierung und Datenverarbeitung."
     },
     "service3": {
-      "title": "KI-Textgestaltung",
-      "description": "Konversionsorientierte Botschaften und Texte, optimiert für Engagement und Aktion."
+      "title": "KI-Integration",
+      "description": "LLM-APIs, Retrieval-Augmented Generation (RAG) und KI-Funktionen in Anwendungen."
     },
     "service4": {
-      "title": "Optimierung & Analytics",
-      "description": "Vollständige Seitenoptimierung mit Analytics-Tracking-Setup für datengesteuerte Entscheidungen."
+      "title": "Engineering-Praktiken",
+      "description": "TypeScript, Eingabevalidierung, Tests und modulare Anwendungsarchitektur."
     }
   },
   "portfolio": {
@@ -140,7 +141,7 @@
     "phone": "Anrufen"
   },
   "footer": {
-    "tagline": "Premium Landing Pages, die konvertieren",
+    "tagline": "Full-Stack- und KI-Anwendungsentwicklung",
     "rights": "Alle Rechte vorbehalten",
     "built": "Erstellt mit React & Tailwind CSS"
   }

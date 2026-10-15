@@ -13,38 +13,39 @@
     "ctaGithub": "GitHub megtekintése"
   },
   "why": {
-    "title": "Miért Válassz Engem",
+    "title": "Rólam / Mérnöki szemlélet",
+    "intro": "Full-stack webalkalmazásokat fejlesztek, API-kat integrálok, és MI-funkciókkal rendelkező, adatalapú irányítópultokat készítek. Fontosnak tartom az adatok validálását és a jól karbantartható alkalmazás-architektúrát.",
     "feature1": {
-      "title": "Gyors Leadás",
-      "description": "Prémium minőségű landing oldalad 3-7 napon belül kész, a részletekre való odafigyeléssel."
+      "title": "Full-stack alkalmazások",
+      "description": "A frontend és a backend területén is dolgozom, összekapcsolva a felhasználói felületeket, az alkalmazáslogikát és az API-kat."
     },
     "feature2": {
-      "title": "Modern Reszponzív Design",
-      "description": "Gyönyörű, mobile-first dizájnok, amik hibátlanul működnek minden eszközön és képernyőméretben."
+      "title": "MI- és adatfunkciók",
+      "description": "Adatalapú irányítópultokat készítek, és MI-funkciókat integrálok webalkalmazásokba."
     },
     "feature3": {
-      "title": "AI-Optimalizált Szöveg & UX",
-      "description": "Konverzióra fókuszált üzenetközlés AI-eszközökkel a maximális hatás és eredmények érdekében."
+      "title": "Validálás és karbantarthatóság",
+      "description": "Validálással, teszteléssel és moduláris architektúrával átlátható és megbízható alkalmazáskódra törekszem."
     }
   },
   "services": {
-    "title": "Szolgáltatások",
-    "subtitle": "Átfogó megoldások digitális jelenlétedhez",
+    "title": "Technikai szaktudás",
+    "subtitle": "Készségek és képességek, amelyeket a projektjeimben alkalmazok",
     "service1": {
-      "title": "Landing Oldal Készítés",
-      "description": "Egyedi landing oldalak React-tel, CMS-el vagy modern web builderekkel, igényeidre szabva."
+      "title": "Frontend",
+      "description": "React, Next.js, TypeScript és reszponzív felhasználói felületek."
     },
     "service2": {
-      "title": "Brand & Vizuális Identitás",
-      "description": "Teljes márka felépítés logóval, színpalettával, tipográfiával és stílus útmutatóval."
+      "title": "Backend és adatok",
+      "description": "API-integráció, Supabase, PostgreSQL, hitelesítés és adatfolyamatok."
     },
     "service3": {
-      "title": "AI Szövegírás",
-      "description": "Konverzióra optimalizált üzenetek és szövegek, amik elkötelezettségre és cselekvésre késztetnek."
+      "title": "MI-integráció",
+      "description": "LLM API-k, visszakereséssel kiegészített generálás (RAG) és MI-alapú alkalmazásfunkciók."
     },
     "service4": {
-      "title": "Optimalizálás & Analitika",
-      "description": "Teljes oldal optimalizálás analitikai követéssel az adatalapú döntésekhez."
+      "title": "Szoftverfejlesztési gyakorlatok",
+      "description": "TypeScript, bemenetvalidálás, tesztelés és moduláris alkalmazás-architektúra."
     }
   },
   "portfolio": {
@@ -148,7 +149,7 @@
     "phone": "Hívj Fel"
   },
   "footer": {
-    "tagline": "Prémium landing oldalak, amik konvertálnak",
+    "tagline": "Full-stack és MI-alkalmazásfejlesztés",
     "rights": "Minden jog fenntartva",
     "built": "React & Tailwind CSS-sel készült"
   }
