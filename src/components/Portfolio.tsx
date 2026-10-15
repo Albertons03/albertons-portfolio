@@ -39,8 +39,7 @@ const Portfolio = () => {
           "Supabase",
           "OpenAI API",
         ],
-        results: [
-          "AI responds instantly, 24/7",
+        features: [
           "All messages are saved and searchable",
           "Easy integration for any business website",
           "Built-in analytics for support quality",
@@ -78,11 +77,8 @@ const Portfolio = () => {
           "Vercel",
           "Railway",
         ],
-        results: [
-          "AI chatbot answers marketing questions in seconds",
+        features: [
           "Data visualizations update in real time",
-          "Secure, scalable backend with Supabase & Railway",
-          "Private GitHub repo (contact for access)",
         ],
       },
     },
@@ -113,12 +109,7 @@ const Portfolio = () => {
           "Vite",
           "Responsive Design",
         ],
-        results: [
-          "Page load time reduced to 1.8 seconds",
-          "Mobile conversion rate increased by +340%",
-          "Booking completion rate improved by +65%",
-          "User session duration increased by +120%",
-        ],
+        features: [],
       },
     },
     {
@@ -148,12 +139,7 @@ const Portfolio = () => {
           "Web3Forms",
           "SEO",
         ],
-        results: [
-          "Reached 4 language markets simultaneously",
-          "Lead generation increased by +280%",
-          "Mobile traffic conversion up +190%",
-          "Average session time: 3.2 minutes",
-        ],
+        features: [],
       },
     },
     {
@@ -183,12 +169,7 @@ const Portfolio = () => {
           "Tailwind CSS",
           "i18next",
         ],
-        results: [
-          "Consultation booking rate up +410%",
-          "Page load time: 1.6 seconds",
-          "Bounce rate decreased by -45%",
-          "Email capture rate increased by +230%",
-        ],
+        features: [],
       },
     },
   ];
@@ -358,26 +339,28 @@ const Portfolio = () => {
                       </div>
                     </div>
 
-                    {/* Results */}
-                    <div>
-                      <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-2 flex items-center space-x-2">
-                        <span className="text-yellow-500">📊</span>
-                        <span>Results</span>
-                      </h4>
-                      <ul className="space-y-1">
-                        {project.caseStudy.results.map(
-                          (result, resultIndex) => (
-                            <li
-                              key={resultIndex}
-                              className="text-xs text-gray-600 dark:text-gray-400 flex items-start space-x-2"
-                            >
-                              <span className="text-green-500 mt-0.5">•</span>
-                              <span>{result}</span>
-                            </li>
-                          )
-                        )}
-                      </ul>
-                    </div>
+                    {/* Features */}
+                    {project.caseStudy.features.length > 0 && (
+                      <div>
+                        <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-2 flex items-center space-x-2">
+                          <span className="text-yellow-500">⚙️</span>
+                          <span>Features</span>
+                        </h4>
+                        <ul className="space-y-1">
+                          {project.caseStudy.features.map(
+                            (feature, featureIndex) => (
+                              <li
+                                key={featureIndex}
+                                className="text-xs text-gray-600 dark:text-gray-400 flex items-start space-x-2"
+                              >
+                                <span className="text-green-500 mt-0.5">•</span>
+                                <span>{feature}</span>
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 )}
 
