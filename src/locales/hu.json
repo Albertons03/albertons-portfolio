@@ -63,7 +63,64 @@
       "title": "IT Karrier Mentoring",
       "description": "Mentoring platform landing oldal többnyelvű támogatással és dinamikus tartalmi szekciókkal."
     },
+    "caseStudy": {
+      "problem": "Probléma",
+      "solution": "Megoldás",
+      "techStack": "Technológiai stack",
+      "features": "Funkciók"
+    },
     "ctaDemo": "Élő Demo Megnyitása"
+  },
+  "projects": {
+    "ai-powered-customer-support-saas": {
+      "title": "MI-alapú ügyfélszolgálati SaaS",
+      "description": "Full-stack SaaS-alkalmazás React, FastAPI, Supabase és OpenAI használatával. A felhasználók a nap 24 órájában cseveghetnek az MI-vel, az összes üzenet mentésre kerül.",
+      "caseStudy": {
+        "problem": "Az ügyfélszolgálati csapatoknak nehézséget okoz, hogy éjjel-nappal azonnali válaszokat adjanak, és megbízhatóan megőrizzék a teljes beszélgetési előzményt.",
+        "solution": "Olyan SaaS-platform készült, ahol a felhasználók bármikor cseveghetnek egy MI-asszisztenssel, miközben a beszélgetések biztonságosan menthetők és kereshetők.",
+        "features": [
+          "Minden üzenet menthető és kereshető",
+          "Egyszerű integráció bármely vállalati weboldallal",
+          "Beépített elemzések az ügyfélszolgálat minőségének értékeléséhez"
+        ]
+      }
+    },
+    "marketing-analytics-ai-chatbot": {
+      "title": "Marketinganalitika MI-chatbottal",
+      "description": "Analitikai irányítópult és MI-chatbot marketingcsapatoknak. Tegyél fel kérdéseket, kapj gyors elemzéseket, és jelenítsd meg az adataidat. FastAPI, OpenAI, React, Supabase és Tailwind használatával készült; Vercelre és Railwayre telepítve.",
+      "caseStudy": {
+        "problem": "A marketingcsapatoknak gyors, MI-alapú válaszokra van szükségük az adataikból, a legtöbb irányítópult azonban lassú és sok kézi munkát igényel.",
+        "solution": "Olyan irányítópult készült, ahol a felhasználók MI-vel csevegve azonnali elemzéseket, diagramokat és hasznos betekintéseket kaphatnak marketingadataikból.",
+        "features": ["Az adatvizualizációk valós időben frissülnek"]
+      }
+    },
+    "smartfit-pro-x": {
+      "title": "SmartFit Pro X Landing",
+      "description": "Modern fitness termék landing oldal konverzióra optimalizált dizájnnal és sima animációkkal.",
+      "caseStudy": {
+        "problem": "A fitneszközpontok elavult foglalási rendszerekkel küzdöttek, ami elmulasztott időpontokhoz és gyenge mobilos felhasználói élményhez vezetett.",
+        "solution": "Modern, mobilközpontú fitneszfoglalási platform készült valós idejű órarenddel, tagságkezeléssel és átgondolt felhasználói felülettel, illetve élménnyel.",
+        "features": []
+      }
+    },
+    "vienna-personal-trainer": {
+      "title": "Bécsi Személyi Edző",
+      "description": "Professzionális személyi edzői weboldal foglalási rendszerrel és ügyfél véleményekkel.",
+      "caseStudy": {
+        "problem": "A bécsi személyi edzőknek többnyelvű weboldalra volt szükségük a nemzetközi ügyfelek eléréséhez, de nem rendelkeztek az egyedi fejlesztéshez szükséges technikai tudással és költségkerettel.",
+        "solution": "Többnyelvű landing oldal készült német, angol, magyar és szerb nyelvi támogatással, automatizált kapcsolatfelvételi űrlapokkal és SEO-optimalizálással.",
+        "features": []
+      }
+    },
+    "it-career-mentoring": {
+      "title": "IT Karrier Mentoring",
+      "description": "Mentoring platform landing oldal többnyelvű támogatással és dinamikus tartalmi szekciókkal.",
+      "caseStudy": {
+        "problem": "A karrier-tanácsadási szolgáltatások általános landing oldalakkal nehezen mutatták be hitelességüket és alakították fizető ügyfelekké a weboldal látogatóit.",
+        "solution": "Professzionális landing oldal készült ügyfélvéleményekkel, szolgáltatásbemutató részekkel, átlátható árakkal és modern UI-komponensekre épülő, konverzióra optimalizált CTA-kkal.",
+        "features": []
+      }
+    }
   },
   "testimonials": {
     "title": "Mit Mondanak Az Ügyfelek",

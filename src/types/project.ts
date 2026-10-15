@@ -6,23 +6,19 @@ export type ProjectStatus =
 
 export type ProjectTier = "featured" | "secondary";
 
-export type ProjectText =
-  | { text: string }
-  | { translationKey: string };
-
 export interface ProjectCaseStudy {
-  problem: string;
-  solution: string;
+  problemKey: string;
+  solutionKey: string;
   techStack: string[];
-  features: string[];
+  featureKeys: string[];
 }
 
 export interface PortfolioProject {
   id: string;
   status: ProjectStatus;
   tier: ProjectTier;
-  title: ProjectText;
-  description: ProjectText;
+  titleKey: string;
+  descriptionKey: string;
   images?: string[];
   videoUrl?: string;
   demoUrl?: string;

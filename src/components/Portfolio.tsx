@@ -3,23 +3,12 @@ import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { projects } from "../data/projects";
-import type { ProjectText } from "../types/project";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const resolveProjectText = (
-  value: ProjectText,
-  translate: (key: string) => string
-) => ("translationKey" in value ? translate(value.translationKey) : value.text);
-
 const Portfolio = () => {
   const { t } = useTranslation();
-  const translatedProjects = projects.map((project) => ({
-    ...project,
-    title: resolveProjectText(project.title, t),
-    description: resolveProjectText(project.description, t),
-  }));
 
   return (
     <section
@@ -39,7 +28,7 @@ const Portfolio = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {translatedProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <div
               key={project.id}
               className="group bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn"
@@ -55,7 +44,7 @@ const Portfolio = () => {
                       frameBorder="0"
                       allowFullScreen
                       className="absolute inset-0 w-full h-full"
-                      title={`${project.title} Demo Video`}
+                      title={`${t(project.titleKey)} Demo Video`}
                     ></iframe>
                   </div>
                 ) : (
@@ -76,7 +65,7 @@ const Portfolio = () => {
                         <SwiperSlide key={imgIndex}>
                           <img
                             src={image}
-                            alt={`${project.title} - Screenshot ${
+                            alt={`${t(project.titleKey)} - Screenshot ${
                               imgIndex + 1
                             }`}
                             className="w-full h-full object-cover"
@@ -135,12 +124,12 @@ const Portfolio = () => {
 
                 {/* Title */}
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  {project.title}
+                  {t(project.titleKey)}
                 </h3>
 
                 {/* Description */}
                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  {project.description}
+                  {t(project.descriptionKey)}
                 </p>
 
                 {/* Case Study */}
@@ -150,10 +139,10 @@ const Portfolio = () => {
                     <div>
                       <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-1 flex items-center space-x-2">
                         <span className="text-red-500">⚠️</span>
-                        <span>Problem</span>
+                        <span>{t("portfolio.caseStudy.problem")}</span>
                       </h4>
                       <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                        {project.caseStudy.problem}
+                        {t(project.caseStudy.problemKey)}
                       </p>
                     </div>
 
@@ -161,10 +150,10 @@ const Portfolio = () => {
                     <div>
                       <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-1 flex items-center space-x-2">
                         <span className="text-green-500">✓</span>
-                        <span>Solution</span>
+                        <span>{t("portfolio.caseStudy.solution")}</span>
                       </h4>
                       <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                        {project.caseStudy.solution}
+                        {t(project.caseStudy.solutionKey)}
                       </p>
                     </div>
 
@@ -172,7 +161,7 @@ const Portfolio = () => {
                     <div>
                       <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-2 flex items-center space-x-2">
                         <span className="text-blue-500">⚙️</span>
-                        <span>Tech Stack</span>
+                        <span>{t("portfolio.caseStudy.techStack")}</span>
                       </h4>
                       <div className="flex flex-wrap gap-1.5">
                         {project.caseStudy.techStack.map((tech, techIndex) => (
@@ -182,26 +171,26 @@ const Portfolio = () => {
                           >
                             {tech}
                           </span>
-                          ))}
+                        ))}
                       </div>
                     </div>
 
                     {/* Features */}
-                    {project.caseStudy.features.length > 0 && (
+                    {project.caseStudy.featureKeys.length > 0 && (
                       <div>
                         <h4 className="text-sm font-bold text-gray-900 dark:text-white mb-2 flex items-center space-x-2">
                           <span className="text-yellow-500">⚙️</span>
-                          <span>Features</span>
+                          <span>{t("portfolio.caseStudy.features")}</span>
                         </h4>
                         <ul className="space-y-1">
-                          {project.caseStudy.features.map(
+                          {project.caseStudy.featureKeys.map(
                             (feature, featureIndex) => (
                               <li
                                 key={featureIndex}
                                 className="text-xs text-gray-600 dark:text-gray-400 flex items-start space-x-2"
                               >
                                 <span className="text-green-500 mt-0.5">•</span>
-                                <span>{feature}</span>
+                                <span>{t(feature)}</span>
                               </li>
                             )
                           )}

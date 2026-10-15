@@ -63,7 +63,64 @@
       "title": "IT Karijera Mentorstvo",
       "description": "Landing stranica mentorske platforme sa višejezičkom podrškom i dinamičkim content sekcijama."
     },
+    "caseStudy": {
+      "problem": "Problem",
+      "solution": "Rešenje",
+      "techStack": "Tehnološki skup",
+      "features": "Funkcionalnosti"
+    },
     "ctaDemo": "Otvori Live Demo"
+  },
+  "projects": {
+    "ai-powered-customer-support-saas": {
+      "title": "SaaS za korisničku podršku uz AI",
+      "description": "Full-stack SaaS aplikacija napravljena uz React, FastAPI, Supabase i OpenAI. Korisnici mogu da razgovaraju sa AI-jem 24 sata dnevno, a sve poruke se čuvaju.",
+      "caseStudy": {
+        "problem": "Timovima korisničke podrške teško je da pruže trenutne odgovore tokom celog dana i pouzdano sačuvaju kompletnu istoriju razgovora.",
+        "solution": "Razvijena je SaaS platforma na kojoj korisnici mogu u bilo kom trenutku da razgovaraju sa AI asistentom, dok se svi razgovori bezbedno čuvaju i mogu pretraživati.",
+        "features": [
+          "Sve poruke se čuvaju i mogu da se pretražuju",
+          "Jednostavna integracija na veb-sajt bilo koje kompanije",
+          "Ugrađena analitika kvaliteta korisničke podrške"
+        ]
+      }
+    },
+    "marketing-analytics-ai-chatbot": {
+      "title": "Marketing analitika uz AI četbot",
+      "description": "Kontrolna tabla za analitiku i AI četbot za marketinške timove. Postavite pitanja, odmah dobijte uvide i vizualizujte podatke. Napravljeno uz FastAPI, OpenAI, React, Supabase i Tailwind; postavljeno na Vercel i Railway.",
+      "caseStudy": {
+        "problem": "Marketinškim timovima potrebni su brzi odgovori iz podataka uz pomoć AI-ja, ali većina kontrolnih tabli je spora i zahteva ručni rad.",
+        "solution": "Napravljena je kontrolna tabla na kojoj korisnici mogu da razgovaraju sa AI-jem i dobiju trenutnu analitiku, grafikone i korisne uvide iz marketinških podataka.",
+        "features": ["Vizualizacije podataka ažuriraju se u realnom vremenu"]
+      }
+    },
+    "smartfit-pro-x": {
+      "title": "SmartFit Pro X Landing",
+      "description": "Moderna fitness proizvod landing stranica sa konverziono optimizovanim dizajnom i glatkim animacijama.",
+      "caseStudy": {
+        "problem": "Fitnes centri su se suočavali sa zastarelim sistemima za zakazivanje, što je dovodilo do propuštenih termina i lošeg korisničkog iskustva na mobilnim uređajima.",
+        "solution": "Napravljena je moderna platforma za rezervaciju fitnes termina, prilagođena mobilnim uređajima, sa rasporedom časova u realnom vremenu, upravljanjem članarinama i intuitivnim korisničkim interfejsom i iskustvom.",
+        "features": []
+      }
+    },
+    "vienna-personal-trainer": {
+      "title": "Bečki Lični Trener",
+      "description": "Profesionalna web stranica za lične trenere sa sistemom za rezervacije i utiscima klijenata.",
+      "caseStudy": {
+        "problem": "Ličnim trenerima u Beču bili su potrebni višejezični veb-sajtovi kako bi došli do međunarodnih klijenata, ali nisu imali tehničko znanje ni budžet za razvoj po meri.",
+        "solution": "Napravljena je potpuno višejezična landing stranica sa podrškom za nemački, engleski, mađarski i srpski, automatizovanim kontakt formularima i SEO optimizacijom.",
+        "features": []
+      }
+    },
+    "it-career-mentoring": {
+      "title": "IT Karijera Mentorstvo",
+      "description": "Landing stranica mentorske platforme sa višejezičkom podrškom i dinamičkim content sekcijama.",
+      "caseStudy": {
+        "problem": "Službe za karijerno savetovanje teško su gradile poverenje i pretvarale posetioce veb-sajta u klijente koji plaćaju zbog generičkih landing stranica.",
+        "solution": "Razvijena je profesionalna landing stranica sa utiscima klijenata, pregledom usluga, transparentnim cenama i CTA pozivima na akciju optimizovanim za konverziju, koristeći moderne UI komponente.",
+        "features": []
+      }
+    }
   },
   "testimonials": {
     "title": "Šta Klijenti Kažu",

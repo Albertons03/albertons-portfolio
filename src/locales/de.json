@@ -63,7 +63,64 @@
       "title": "IT Karriere Mentoring",
       "description": "Mentoring-Plattform Landing Page mit mehrsprachiger Unterstützung und dynamischen Content-Bereichen."
     },
+    "caseStudy": {
+      "problem": "Problem",
+      "solution": "Lösung",
+      "techStack": "Technologie-Stack",
+      "features": "Funktionen"
+    },
     "ctaDemo": "Live Demo Öffnen"
+  },
+  "projects": {
+    "ai-powered-customer-support-saas": {
+      "title": "SaaS für KI-gestützten Kundensupport",
+      "description": "Full-Stack-SaaS-Anwendung mit React, FastAPI, Supabase und OpenAI. Nutzer können rund um die Uhr mit einer KI chatten; alle Nachrichten werden gespeichert.",
+      "caseStudy": {
+        "problem": "Kundensupport-Teams haben Schwierigkeiten, rund um die Uhr sofortige Antworten bereitzustellen und den gesamten Chatverlauf zuverlässig zu speichern.",
+        "solution": "Entwickelt wurde eine SaaS-Plattform, auf der Nutzer jederzeit mit einem KI-Assistenten chatten können und deren Gespräche sicher gespeichert und durchsuchbar sind.",
+        "features": [
+          "Alle Nachrichten werden gespeichert und können durchsucht werden",
+          "Einfache Integration in die Website jedes Unternehmens",
+          "Integrierte Analysen zur Qualität des Kundensupports"
+        ]
+      }
+    },
+    "marketing-analytics-ai-chatbot": {
+      "title": "Marketing-Analytics mit KI-Chatbot",
+      "description": "Analytics-Dashboard und KI-Chatbot für Marketingteams. Fragen stellen, sofort Erkenntnisse erhalten und Daten visualisieren. Entwickelt mit FastAPI, OpenAI, React, Supabase und Tailwind; bereitgestellt auf Vercel und Railway.",
+      "caseStudy": {
+        "problem": "Marketingteams benötigen schnelle, KI-gestützte Antworten aus ihren Daten, doch die meisten Dashboards sind langsam und erfordern manuelle Arbeit.",
+        "solution": "Entwickelt wurde ein Dashboard, in dem Nutzer mit einer KI chatten können, um sofort Analysen, Diagramme und umsetzbare Erkenntnisse aus ihren Marketingdaten zu erhalten.",
+        "features": ["Datenvisualisierungen werden in Echtzeit aktualisiert"]
+      }
+    },
+    "smartfit-pro-x": {
+      "title": "SmartFit Pro X Landing",
+      "description": "Moderne Fitness-Produkt-Landing-Page mit konversionsoptimiertem Design und flüssigen Animationen.",
+      "caseStudy": {
+        "problem": "Fitnessstudios hatten mit veralteten Buchungssystemen zu kämpfen, was zu verpassten Terminen und einer schlechten mobilen Nutzererfahrung führte.",
+        "solution": "Entwickelt wurde eine moderne, für Mobilgeräte optimierte Fitness-Buchungsplattform mit Kursplanung in Echtzeit, Mitgliederverwaltung und intuitivem UI/UX-Design.",
+        "features": []
+      }
+    },
+    "vienna-personal-trainer": {
+      "title": "Wiener Personal Trainer",
+      "description": "Professionelle Personal-Training-Website mit Buchungssystem und Kundenbewertungen.",
+      "caseStudy": {
+        "problem": "Personal Trainer in Wien benötigten mehrsprachige Websites, um internationale Kunden zu erreichen, verfügten jedoch weder über das technische Know-how noch das Budget für eine individuelle Entwicklung.",
+        "solution": "Erstellt wurde eine vollständig mehrsprachige Landingpage mit Deutsch, Englisch, Ungarisch und Serbisch, automatisierten Kontaktformularen und SEO-Optimierung.",
+        "features": []
+      }
+    },
+    "it-career-mentoring": {
+      "title": "IT Karriere Mentoring",
+      "description": "Mentoring-Plattform Landing Page mit mehrsprachiger Unterstützung und dynamischen Content-Bereichen.",
+      "caseStudy": {
+        "problem": "Anbieter von Karriere-Coaching hatten Schwierigkeiten, mit generischen Landingpages ihre Glaubwürdigkeit zu zeigen und Websitebesucher in zahlende Kunden umzuwandeln.",
+        "solution": "Entwickelt wurde eine professionelle Landingpage mit Testimonials, Leistungsübersicht, transparenter Preisgestaltung und conversion-optimierten CTAs auf Basis moderner UI-Komponenten.",
+        "features": []
+      }
+    }
   },
   "testimonials": {
     "title": "Was Kunden Sagen",
