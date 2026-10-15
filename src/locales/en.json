@@ -69,6 +69,11 @@
       "techStack": "Tech Stack",
       "features": "Features"
     },
+    "media": {
+      "unavailable": "Project media unavailable",
+      "previousScreenshot": "Previous screenshot",
+      "nextScreenshot": "Next screenshot"
+    },
     "ctaDemo": "Open Live Demo"
   },
   "projects": {

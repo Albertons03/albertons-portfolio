@@ -69,6 +69,11 @@
       "techStack": "Tehnološki skup",
       "features": "Funkcionalnosti"
     },
+    "media": {
+      "unavailable": "Medijski sadržaj projekta nije dostupan",
+      "previousScreenshot": "Prethodni snimak ekrana",
+      "nextScreenshot": "Sledeći snimak ekrana"
+    },
     "ctaDemo": "Otvori Live Demo"
   },
   "projects": {

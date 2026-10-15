@@ -69,6 +69,11 @@
       "techStack": "Technológiai stack",
       "features": "Funkciók"
     },
+    "media": {
+      "unavailable": "A projekt médiatartalma nem érhető el",
+      "previousScreenshot": "Előző képernyőkép",
+      "nextScreenshot": "Következő képernyőkép"
+    },
     "ctaDemo": "Élő Demo Megnyitása"
   },
   "projects": {

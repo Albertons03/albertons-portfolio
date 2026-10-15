@@ -69,6 +69,11 @@
       "techStack": "Technologie-Stack",
       "features": "Funktionen"
     },
+    "media": {
+      "unavailable": "Projektmedien nicht verfügbar",
+      "previousScreenshot": "Vorheriger Screenshot",
+      "nextScreenshot": "Nächster Screenshot"
+    },
     "ctaDemo": "Live Demo Öffnen"
   },
   "projects": {
