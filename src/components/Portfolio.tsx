@@ -12,12 +12,14 @@ interface ProjectScreenshotProps {
   src: string;
   alt: string;
   fallbackLabel: string;
+  objectFit?: "cover" | "contain";
 }
 
 const ProjectScreenshot = ({
   src,
   alt,
   fallbackLabel,
+  objectFit = "cover",
 }: ProjectScreenshotProps) => {
   const [hasError, setHasError] = useState(false);
 
@@ -33,11 +35,14 @@ const ProjectScreenshot = ({
     );
   }
 
+  const imageFitClass =
+    objectFit === "contain" ? "object-contain" : "object-cover";
+
   return (
     <img
       src={src}
       alt={alt}
-      className="w-full h-full object-cover"
+      className={`w-full h-full ${imageFitClass}`}
       onError={() => setHasError(true)}
     />
   );
@@ -85,6 +90,9 @@ const Portfolio = () => {
             const demoUrl = getValidHttpUrl(project.demoUrl);
             const githubUrl = getValidHttpUrl(project.github);
             const screenshots = project.images ?? [];
+            const isLiveScheduler =
+              project.id === "ai-social-media-scheduler" &&
+              project.status === "live";
 
             return (
               <div
@@ -133,6 +141,11 @@ const Portfolio = () => {
                             src={image}
                             alt={`${title} - Screenshot ${imgIndex + 1}`}
                             fallbackLabel={t("portfolio.media.unavailable")}
+                            objectFit={
+                              project.id === "ai-social-media-scheduler"
+                                ? "contain"
+                                : "cover"
+                            }
                           />
                         </SwiperSlide>
                       ))}
@@ -187,9 +200,24 @@ const Portfolio = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  {title}
-                </h3>
+                {isLiveScheduler ? (
+                  <div className="mb-3 flex items-start justify-between gap-3">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                      {title}
+                    </h3>
+                    <span
+                      role="status"
+                      aria-label={t("portfolio.status.live")}
+                      className="shrink-0 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold tracking-wide text-emerald-700 ring-1 ring-inset ring-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-300 dark:ring-emerald-800"
+                    >
+                      LIVE
+                    </span>
+                  </div>
+                ) : (
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                    {title}
+                  </h3>
+                )}
 
                 {/* Description */}
                 <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">

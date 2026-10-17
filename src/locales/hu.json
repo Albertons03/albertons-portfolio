@@ -63,6 +63,9 @@
       "title": "IT Karrier Mentoring",
       "description": "Mentoring platform landing oldal többnyelvű támogatással és dinamikus tartalmi szekciókkal."
     },
+    "status": {
+      "live": "Élő projekt"
+    },
     "caseStudy": {
       "problem": "Probléma",
       "solution": "Megoldás",
@@ -77,6 +80,10 @@
     "ctaDemo": "Élő Demo Megnyitása"
   },
   "projects": {
+    "ai-social-media-scheduler": {
+      "title": "MI-alapú közösségimédia-ütemező V1",
+      "description": "Készíts MI által támogatott közösségi bejegyzéseket, tervezd meg őket naptárban, és ütemezd a LinkedIn-közzétételt, amelyet a tulajdonos fiókjával teszteltek. Az ütemezett közzétételt Supabase Cron és hitelesített Edge Functions kezeli."
+    },
     "ai-powered-customer-support-saas": {
       "title": "MI-alapú ügyfélszolgálati SaaS",
       "description": "Full-stack SaaS-alkalmazás React, FastAPI, Supabase és OpenAI használatával. A felhasználók a nap 24 órájában cseveghetnek az MI-vel, az összes üzenet mentésre kerül.",

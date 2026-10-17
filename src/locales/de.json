@@ -63,6 +63,9 @@
       "title": "IT Karriere Mentoring",
       "description": "Mentoring-Plattform Landing Page mit mehrsprachiger Unterstützung und dynamischen Content-Bereichen."
     },
+    "status": {
+      "live": "Live-Projekt"
+    },
     "caseStudy": {
       "problem": "Problem",
       "solution": "Lösung",
@@ -77,6 +80,10 @@
     "ctaDemo": "Live Demo Öffnen"
   },
   "projects": {
+    "ai-social-media-scheduler": {
+      "title": "KI-Social-Media-Planer V1",
+      "description": "Erstelle KI-gestützte Social-Media-Beiträge, plane sie im Kalender und terminiere LinkedIn-Veröffentlichungen, getestet mit dem Konto des Eigentümers. Supabase Cron und authentifizierte Edge Functions übernehmen die geplante Veröffentlichung."
+    },
     "ai-powered-customer-support-saas": {
       "title": "SaaS für KI-gestützten Kundensupport",
       "description": "Full-Stack-SaaS-Anwendung mit React, FastAPI, Supabase und OpenAI. Nutzer können rund um die Uhr mit einer KI chatten; alle Nachrichten werden gespeichert.",

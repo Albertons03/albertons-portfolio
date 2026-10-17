@@ -2,6 +2,25 @@ import type { PortfolioProject } from "../types/project";
 
 export const projects: PortfolioProject[] = [
   {
+    id: "ai-social-media-scheduler",
+    status: "live",
+    tier: "featured",
+    titleKey: "projects.ai-social-media-scheduler.title",
+    descriptionKey: "projects.ai-social-media-scheduler.description",
+    images: [
+      "/projects/scheduler-dashboard.webp",
+      "/projects/scheduler-scheduling.webp",
+      "/projects/scheduler-create-post.webp",
+      "/projects/scheduler-publishing.webp",
+    ],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "AI-Assisted Content Creation",
+    ],
+  },
+  {
     id: "ai-powered-customer-support-saas",
     status: "prototype",
     tier: "featured",

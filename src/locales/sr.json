@@ -63,6 +63,9 @@
       "title": "IT Karijera Mentorstvo",
       "description": "Landing stranica mentorske platforme sa višejezičkom podrškom i dinamičkim content sekcijama."
     },
+    "status": {
+      "live": "Projekat je aktivan"
+    },
     "caseStudy": {
       "problem": "Problem",
       "solution": "Rešenje",
@@ -77,6 +80,10 @@
     "ctaDemo": "Otvori Live Demo"
   },
   "projects": {
+    "ai-social-media-scheduler": {
+      "title": "AI planer objava za društvene mreže V1",
+      "description": "Kreiraj objave za društvene mreže uz pomoć AI-ja, planiraj ih u kalendaru i zakaži objavljivanje na LinkedInu, testirano za nalog vlasnika. Supabase Cron i autentifikovane Edge Functions obrađuju zakazano objavljivanje."
+    },
     "ai-powered-customer-support-saas": {
       "title": "SaaS za korisničku podršku uz AI",
       "description": "Full-stack SaaS aplikacija napravljena uz React, FastAPI, Supabase i OpenAI. Korisnici mogu da razgovaraju sa AI-jem 24 sata dnevno, a sve poruke se čuvaju.",

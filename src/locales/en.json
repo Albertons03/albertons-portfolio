@@ -63,6 +63,9 @@
       "title": "IT Career Mentoring",
       "description": "Mentoring platform landing page with multilingual support and dynamic content sections."
     },
+    "status": {
+      "live": "Live project"
+    },
     "caseStudy": {
       "problem": "Problem",
       "solution": "Solution",
@@ -77,6 +80,10 @@
     "ctaDemo": "Open Live Demo"
   },
   "projects": {
+    "ai-social-media-scheduler": {
+      "title": "AI Social Media Scheduler V1",
+      "description": "Create AI-assisted social posts, plan them on a calendar, and schedule LinkedIn publishing, tested for the owner's account. Supabase Cron and authenticated Edge Functions handle scheduled publishing."
+    },
     "ai-powered-customer-support-saas": {
       "title": "AI-Powered Customer Support SaaS",
       "description": "Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.",
