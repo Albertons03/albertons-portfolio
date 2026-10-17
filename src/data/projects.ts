@@ -13,12 +13,14 @@ export const projects: PortfolioProject[] = [
       "/projects/scheduler-create-post.webp",
       "/projects/scheduler-publishing.webp",
     ],
+    demoUrl: "https://www.landingbits.net/en",
     tags: [
       "Next.js",
       "TypeScript",
       "Supabase",
       "AI-Assisted Content Creation",
     ],
+    github: "https://github.com/Albertons03/ai-social-media-scheduler",
   },
   {
     id: "ai-powered-customer-support-saas",
