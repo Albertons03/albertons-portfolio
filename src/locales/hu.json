@@ -84,6 +84,10 @@
       "title": "MI-alapú közösségimédia-ütemező V1",
       "description": "Készíts MI által támogatott közösségi bejegyzéseket, tervezd meg őket naptárban, és ütemezd a LinkedIn-közzétételt, amelyet a tulajdonos fiókjával teszteltek. Az ütemezett közzétételt Supabase Cron és hitelesített Edge Functions kezeli."
     },
+    "apib-v1": {
+      "title": "APIB V1 MI-alapú piaci elemző irányítópult",
+      "description": "Next.js és TypeScript alapú, MI-vezérelt piaci elemző irányítópult. A Binance, a CoinGecko és a piaci hírek adatait többügynökös OpenAI-elemzéssel, determinisztikus pontozással és kockázatszámításokkal egyesíti. Kizárólag elemzésre szolgál; automatikus kereskedést nem hajt végre."
+    },
     "ai-powered-customer-support-saas": {
       "title": "MI-alapú ügyfélszolgálati SaaS",
       "description": "Full-stack SaaS-alkalmazás React, FastAPI, Supabase és OpenAI használatával. A felhasználók a nap 24 órájában cseveghetnek az MI-vel, az összes üzenet mentésre kerül.",

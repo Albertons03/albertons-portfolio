@@ -84,6 +84,10 @@
       "title": "KI-Social-Media-Planer V1",
       "description": "Erstelle KI-gestützte Social-Media-Beiträge, plane sie im Kalender und terminiere LinkedIn-Veröffentlichungen, getestet mit dem Konto des Eigentümers. Supabase Cron und authentifizierte Edge Functions übernehmen die geplante Veröffentlichung."
     },
+    "apib-v1": {
+      "title": "APIB V1 Dashboard für KI-gestützte Marktanalysen",
+      "description": "KI-gestütztes Dashboard zur Marktanalyse, entwickelt mit Next.js und TypeScript. Kombiniert Daten von Binance und CoinGecko sowie Marktnachrichten mit einer Multi-Agenten-Analyse von OpenAI, deterministischer Bewertung und Risikoberechnungen. Dient ausschließlich der Analyse; keine automatisierte Handelsausführung."
+    },
     "ai-powered-customer-support-saas": {
       "title": "SaaS für KI-gestützten Kundensupport",
       "description": "Full-Stack-SaaS-Anwendung mit React, FastAPI, Supabase und OpenAI. Nutzer können rund um die Uhr mit einer KI chatten; alle Nachrichten werden gespeichert.",

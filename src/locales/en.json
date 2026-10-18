@@ -84,6 +84,10 @@
       "title": "AI Social Media Scheduler V1",
       "description": "Create AI-assisted social posts, plan them on a calendar, and schedule LinkedIn publishing, tested for the owner's account. Supabase Cron and authenticated Edge Functions handle scheduled publishing."
     },
+    "apib-v1": {
+      "title": "APIB V1 Market Analysis Dashboard",
+      "description": "AI-powered market analysis dashboard built with Next.js and TypeScript. Combines Binance, CoinGecko and market news data with multi-agent OpenAI analysis, deterministic scoring and risk calculations. Analysis only; no automated trade execution."
+    },
     "ai-powered-customer-support-saas": {
       "title": "AI-Powered Customer Support SaaS",
       "description": "Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.",

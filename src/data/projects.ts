@@ -23,6 +23,19 @@ export const projects: PortfolioProject[] = [
     github: "https://github.com/Albertons03/ai-social-media-scheduler",
   },
   {
+    id: "apib-v1",
+    status: "in-development",
+    tier: "featured",
+    titleKey: "projects.apib-v1.title",
+    descriptionKey: "projects.apib-v1.description",
+    images: [
+      "/projects/apib-v1-dashboard-cover.webp",
+      "/projects/apib-v1-dashboard-full.webp",
+    ],
+    tags: ["Next.js", "TypeScript", "OpenAI API", "Binance API", "CoinGecko"],
+    github: "https://github.com/Albertons03/apib-v1",
+  },
+  {
     id: "ai-powered-customer-support-saas",
     status: "prototype",
     tier: "featured",
