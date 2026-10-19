@@ -88,6 +88,20 @@
       "title": "APIB V1 Dashboard für KI-gestützte Marktanalysen",
       "description": "KI-gestütztes Dashboard zur Marktanalyse, entwickelt mit Next.js und TypeScript. Kombiniert Daten von Binance und CoinGecko sowie Marktnachrichten mit einer Multi-Agenten-Analyse von OpenAI, deterministischer Bewertung und Risikoberechnungen. Dient ausschließlich der Analyse; keine automatisierte Handelsausführung."
     },
+    "forest-stay-v1": {
+      "title": "Forest Stay — Cabin Booking Demo",
+      "description": "Ein fiktives Portfolio-Demo, kein echtes Unterkunftsangebot. Entdecke Hütten, filtere nach Gästezahl, sieh dir dynamische Details an und sende Reservierungsanfragen. Serverseitige Validierung und Preisberechnung, Supabase-Speicherung sowie eine PostgreSQL-Exclusion-Constraint verhindern Überschneidungen aktiver Buchungen.",
+      "caseStudy": {
+        "problem": "Ein Hüttenbuchungs-Demo muss verfügbare Hütten und Reservierungen übersichtlich darstellen und ungültige Anfragen sowie Terminkonflikte zuverlässig behandeln.",
+        "solution": "Entwickelt wurde ein fiktives Hüttenbuchungs-Demo mit serverseitig validierten Reservierungsanfragen und einem Schutz vor Überschneidungen auf Datenbankebene. Anfragen werden als ausstehende Demo-Daten gespeichert; dies ist weder ein echtes Unterkunftsangebot noch ein System zur Buchungsbestätigung.",
+        "features": [
+          "Hütten entdecken, nach Gästezahl filtern und dynamische Details, Ausstattung und Übernachtungspreise ansehen.",
+          "Reservierungsanfragen mit serverseitiger Validierung sowie serverseitiger Berechnung von Nächten und Gesamtpreis senden.",
+          "Hütten- und Reservierungsdaten in Supabase speichern.",
+          "Eine PostgreSQL-Exclusion-Constraint verhindert überlappende ausstehende oder bestätigte Reservierungen derselben Hütte; stornierte Reservierungen blockieren keine Termine."
+        ]
+      }
+    },
     "ai-powered-customer-support-saas": {
       "title": "SaaS für KI-gestützten Kundensupport",
       "description": "Full-Stack-SaaS-Anwendung mit React, FastAPI, Supabase und OpenAI. Nutzer können rund um die Uhr mit einer KI chatten; alle Nachrichten werden gespeichert.",

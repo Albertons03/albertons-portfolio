@@ -88,6 +88,20 @@
       "title": "APIB V1 Market Analysis Dashboard",
       "description": "AI-powered market analysis dashboard built with Next.js and TypeScript. Combines Binance, CoinGecko and market news data with multi-agent OpenAI analysis, deterministic scoring and risk calculations. Analysis only; no automated trade execution."
     },
+    "forest-stay-v1": {
+      "title": "Forest Stay — Cabin Booking Demo",
+      "description": "A fictional portfolio demo, not a real accommodation service. Discover cabins, filter by guest capacity, view dynamic details, and submit reservation requests. Server-side validation and price calculation, Supabase persistence, and a PostgreSQL exclusion constraint prevent overlapping active bookings.",
+      "caseStudy": {
+        "problem": "A cabin-booking demo needs to make cabin options and reservation availability clear while handling invalid requests and date conflicts reliably.",
+        "solution": "Built a fictional cabin-booking demo with server-validated reservation requests and database-enforced protection against overlapping active bookings. Requests are stored as pending demo data; this is not a real accommodation service or a booking-confirmation system.",
+        "features": [
+          "Discover cabins, filter by guest capacity, and view dynamic details, amenities, and nightly prices.",
+          "Submit reservation requests with server-side validation and server-calculated nights and total price.",
+          "Persist cabin and reservation data in Supabase.",
+          "Use a PostgreSQL exclusion constraint to prevent overlapping pending or confirmed reservations for the same cabin; cancelled reservations do not block dates."
+        ]
+      }
+    },
     "ai-powered-customer-support-saas": {
       "title": "AI-Powered Customer Support SaaS",
       "description": "Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.",

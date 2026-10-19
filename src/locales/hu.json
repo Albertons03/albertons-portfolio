@@ -88,6 +88,20 @@
       "title": "APIB V1 MI-alapú piaci elemző irányítópult",
       "description": "Next.js és TypeScript alapú, MI-vezérelt piaci elemző irányítópult. A Binance, a CoinGecko és a piaci hírek adatait többügynökös OpenAI-elemzéssel, determinisztikus pontozással és kockázatszámításokkal egyesíti. Kizárólag elemzésre szolgál; automatikus kereskedést nem hajt végre."
     },
+    "forest-stay-v1": {
+      "title": "Forest Stay — Cabin Booking Demo",
+      "description": "Fiktív portfóliódemó, nem valódi szálláshely-szolgáltatás. Fedezz fel faházakat, szűrj vendégkapacitás szerint, tekintsd meg a dinamikus részleteket, és küldj foglalási kérelmet. A szerveroldali ellenőrzés és árkalkuláció, a Supabase-adattárolás, valamint egy PostgreSQL kizárási megkötés megakadályozza az aktív foglalások átfedését.",
+      "caseStudy": {
+        "problem": "Egy faházfoglalási demónak egyértelműen kell bemutatnia a faházakat és a foglalási lehetőségeket, miközben megbízhatóan kezeli az érvénytelen kérelmeket és az időpontütközéseket.",
+        "solution": "Egy fiktív faházfoglalási demó készült szerveroldalon ellenőrzött foglalási kérelmekkel és az átfedő aktív foglalásokat adatbázisszinten megakadályozó védelemmel. A kérelmek függőben lévő demóadatként kerülnek mentésre; ez nem valódi szálláshely-szolgáltatás és nem foglalás-visszaigazoló rendszer.",
+        "features": [
+          "Faházak felfedezése, szűrés vendégkapacitás szerint, valamint dinamikus részletek, felszereltség és éjszakánkénti árak megtekintése.",
+          "Foglalási kérelem küldése szerveroldali ellenőrzéssel, valamint az éjszakák és a teljes ár szerveroldali kiszámításával.",
+          "A faház- és foglalási adatok tárolása a Supabase-ben.",
+          "PostgreSQL-kizárási megkötés akadályozza meg az ugyanahhoz a faházhoz tartozó függőben lévő vagy megerősített foglalások átfedését; a lemondott foglalások nem blokkolják az időpontokat."
+        ]
+      }
+    },
     "ai-powered-customer-support-saas": {
       "title": "MI-alapú ügyfélszolgálati SaaS",
       "description": "Full-stack SaaS-alkalmazás React, FastAPI, Supabase és OpenAI használatával. A felhasználók a nap 24 órájában cseveghetnek az MI-vel, az összes üzenet mentésre kerül.",

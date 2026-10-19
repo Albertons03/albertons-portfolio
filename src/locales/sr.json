@@ -88,6 +88,20 @@
       "title": "APIB V1 kontrolna tabla za analizu tržišta",
       "description": "Kontrolna tabla za analizu tržišta uz pomoć AI-ja, napravljena pomoću Next.js-a i TypeScript-a. Objedinjuje podatke sa Binance-a i CoinGecko-a, kao i vesti sa tržišta, sa OpenAI analizom više agenata, determinističkim bodovanjem i proračunima rizika. Služi samo za analizu; ne izvršava automatske trgovine."
     },
+    "forest-stay-v1": {
+      "title": "Forest Stay — Cabin Booking Demo",
+      "description": "Fiktivni portfolio demo, nije stvarni smeštaj. Istražite kabine, filtrirajte ih prema kapacitetu gostiju, pregledajte dinamičke detalje i pošaljite zahtev za rezervaciju. Serverska validacija i obračun cene, čuvanje podataka u Supabase-u i PostgreSQL ograničenje isključivanja sprečavaju preklapanje aktivnih rezervacija.",
+      "caseStudy": {
+        "problem": "Demo za rezervaciju kabina treba jasno da prikaže kabine i dostupnost, uz pouzdanu obradu neispravnih zahteva i sukoba termina.",
+        "solution": "Napravljen je fiktivni demo za rezervaciju kabina sa serverski validiranim zahtevima i zaštitom na nivou baze podataka od preklapanja aktivnih rezervacija. Zahtevi se čuvaju kao demo podaci na čekanju; ovo nije stvarni smeštaj niti sistem za potvrdu rezervacija.",
+        "features": [
+          "Istražite kabine, filtrirajte prema kapacitetu gostiju i pregledajte dinamičke detalje, sadržaje i cene po noćenju.",
+          "Pošaljite zahtev za rezervaciju uz serversku validaciju i serverski obračun broja noćenja i ukupne cene.",
+          "Čuvajte podatke o kabinama i rezervacijama u Supabase-u.",
+          "PostgreSQL ograničenje isključivanja sprečava preklapanje rezervacija na čekanju ili potvrđenih rezervacija za istu kabinu; otkazane rezervacije ne blokiraju termine."
+        ]
+      }
+    },
     "ai-powered-customer-support-saas": {
       "title": "SaaS za korisničku podršku uz AI",
       "description": "Full-stack SaaS aplikacija napravljena uz React, FastAPI, Supabase i OpenAI. Korisnici mogu da razgovaraju sa AI-jem 24 sata dnevno, a sve poruke se čuvaju.",
