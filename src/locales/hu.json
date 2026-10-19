@@ -4,7 +4,9 @@
     "about": "Rólam",
     "projects": "Projektek",
     "techStack": "Technológiák",
-    "contact": "Kapcsolat"
+    "contact": "Kapcsolat",
+    "openMenu": "Navigációs menü megnyitása",
+    "closeMenu": "Navigációs menü bezárása"
   },
   "hero": {
     "headline": "Full-stack és MI-alapú alkalmazások fejlesztője",

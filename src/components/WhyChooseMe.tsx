@@ -32,7 +32,7 @@ const WhyChooseMe = () => {
     <section id="why" className="bg-white px-4 py-14 dark:bg-gray-900 sm:px-6 sm:py-16 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="mb-10 text-center animate-fadeIn sm:mb-12">
+        <div className="mb-10 text-center animate-fadeIn motion-reduce:animate-none sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("why.title")}
           </h2>
@@ -48,7 +48,7 @@ const WhyChooseMe = () => {
             return (
               <div
                 key={index}
-                className="group rounded-2xl border border-gray-200 p-6 transition-colors duration-300 hover:border-primary/40 hover:bg-gradient-to-br hover:from-blue-50/60 hover:to-cyan-50/60 hover:shadow-lg dark:border-gray-700 dark:hover:from-blue-950/30 dark:hover:to-cyan-950/20 sm:p-7 animate-fadeIn"
+                className="group rounded-2xl border border-gray-200 p-6 transition-colors duration-300 hover:border-primary/40 hover:bg-gradient-to-br hover:from-blue-50/60 hover:to-cyan-50/60 hover:shadow-lg dark:border-gray-700 dark:hover:from-blue-950/30 dark:hover:to-cyan-950/20 sm:p-7 animate-fadeIn motion-reduce:animate-none"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Icon */}

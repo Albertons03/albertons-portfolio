@@ -20,6 +20,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname, location.hash]);
+
   const isOnBlogPage = location.pathname.startsWith("/blog");
 
   const navLinks = [
@@ -147,19 +151,25 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            aria-label={isOpen ? t("nav.closeMenu") : t("nav.openMenu")}
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
           >
             {isOpen ? (
-              <X className="w-6 h-6 dark:text-gray-300" />
+              <X className="w-6 h-6 dark:text-gray-300" aria-hidden="true" />
             ) : (
-              <Menu className="w-6 h-6 dark:text-gray-300" />
+              <Menu className="w-6 h-6 dark:text-gray-300" aria-hidden="true" />
             )}
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+      <div
+        id="mobile-navigation"
+        hidden={!isOpen}
+        className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800"
+      >
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) =>
               link.isExternal ? (
@@ -237,8 +247,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </div>
-      )}
+      </div>
     </nav>
   );
 };

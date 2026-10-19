@@ -4,7 +4,9 @@
     "about": "About",
     "projects": "Projects",
     "techStack": "Tech Stack",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "hero": {
     "headline": "Full-Stack & AI Application Developer",

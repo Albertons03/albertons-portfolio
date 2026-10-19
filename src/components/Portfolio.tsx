@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -60,6 +60,19 @@ const getValidHttpUrl = (value?: string) => {
 
 const Portfolio = () => {
   const { t } = useTranslation();
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() =>
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updateMotionPreference = () =>
+      setPrefersReducedMotion(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", updateMotionPreference);
+    return () =>
+      mediaQuery.removeEventListener("change", updateMotionPreference);
+  }, []);
 
   return (
     <section
@@ -68,7 +81,7 @@ const Portfolio = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fadeIn">
+        <div className="text-center mb-16 animate-fadeIn motion-reduce:animate-none">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("portfolio.title")}
           </h2>
@@ -131,13 +144,21 @@ const Portfolio = () => {
                   /* Image Carousel */
                   <>
                     <Swiper
-                      modules={[Navigation, Pagination, Autoplay]}
+                      modules={[
+                        Navigation,
+                        Pagination,
+                        ...(!prefersReducedMotion ? [Autoplay] : []),
+                      ]}
                       navigation={{
                         prevEl: `.swiper-button-prev-${index}`,
                         nextEl: `.swiper-button-next-${index}`,
                       }}
                       pagination={{ clickable: true }}
-                      autoplay={{ delay: 3000, disableOnInteraction: false }}
+                      autoplay={
+                        prefersReducedMotion
+                          ? false
+                          : { delay: 3000, disableOnInteraction: false }
+                      }
                       loop={true}
                       className="h-full w-full"
                     >

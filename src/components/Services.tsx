@@ -42,7 +42,7 @@ const Services = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="mb-10 text-center animate-fadeIn sm:mb-12">
+        <div className="mb-10 text-center animate-fadeIn motion-reduce:animate-none sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("services.title")}
           </h2>
@@ -58,7 +58,7 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg dark:border-gray-700 dark:bg-gray-900 sm:p-7 motion-reduce:transform-none motion-reduce:transition-none animate-fadeIn"
+                className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg dark:border-gray-700 dark:bg-gray-900 sm:p-7 motion-reduce:transform-none motion-reduce:transition-none animate-fadeIn motion-reduce:animate-none"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Icon with Gradient */}

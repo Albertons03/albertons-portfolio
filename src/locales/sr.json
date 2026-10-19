@@ -4,7 +4,9 @@
     "about": "O meni",
     "projects": "Projekti",
     "techStack": "Tehnologije",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "openMenu": "Otvori navigacioni meni",
+    "closeMenu": "Zatvori navigacioni meni"
   },
   "hero": {
     "headline": "Programer full-stack aplikacija i AI rešenja",
