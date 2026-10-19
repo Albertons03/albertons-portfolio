@@ -12,14 +12,12 @@ interface ProjectScreenshotProps {
   src: string;
   alt: string;
   fallbackLabel: string;
-  objectFit?: "cover" | "contain";
 }
 
 const ProjectScreenshot = ({
   src,
   alt,
   fallbackLabel,
-  objectFit = "cover",
 }: ProjectScreenshotProps) => {
   const [hasError, setHasError] = useState(false);
 
@@ -35,14 +33,11 @@ const ProjectScreenshot = ({
     );
   }
 
-  const imageFitClass =
-    objectFit === "contain" ? "object-contain" : "object-cover";
-
   return (
     <img
       src={src}
       alt={alt}
-      className={`w-full h-full ${imageFitClass}`}
+      className="h-full w-full object-contain"
       onError={() => setHasError(true)}
     />
   );
@@ -83,13 +78,14 @@ const Portfolio = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2">
           {projects.map((project, index) => {
             const title = t(project.titleKey);
             const videoUrl = getValidHttpUrl(project.videoUrl);
             const demoUrl = getValidHttpUrl(project.demoUrl);
             const githubUrl = getValidHttpUrl(project.github);
             const screenshots = project.images ?? [];
+            const isForestStay = project.id === "forest-stay-v1";
             const isLiveScheduler =
               project.id === "ai-social-media-scheduler" &&
               project.status === "live";
@@ -97,11 +93,21 @@ const Portfolio = () => {
             return (
               <div
                 key={project.id}
-                className="group bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn"
+                className={`group/card overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:border-gray-700/80 dark:bg-gray-800/70 md:rounded-3xl md:hover:-translate-y-1 ${
+                  isForestStay
+                    ? "md:col-span-2 md:grid md:grid-cols-2 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]"
+                    : ""
+                }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
               {/* Project Video or Image Carousel */}
-              <div className="relative h-64 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 overflow-hidden group">
+              <div
+                className={`group/media relative aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-gray-900/70 ${
+                  isForestStay
+                    ? "lg:aspect-auto lg:h-[26rem] lg:min-h-0"
+                    : ""
+                }`}
+              >
                 {videoUrl ? (
                   /* Loom Video Embed */
                   <div className="relative w-full h-full">
@@ -141,11 +147,6 @@ const Portfolio = () => {
                             src={image}
                             alt={`${title} - Screenshot ${imgIndex + 1}`}
                             fallbackLabel={t("portfolio.media.unavailable")}
-                            objectFit={
-                              project.id === "ai-social-media-scheduler"
-                                ? "contain"
-                                : "cover"
-                            }
                           />
                         </SwiperSlide>
                       ))}
@@ -155,44 +156,44 @@ const Portfolio = () => {
                     <button
                       type="button"
                       aria-label={t("portfolio.media.previousScreenshot")}
-                      className={`swiper-button-prev-${index} absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white dark:bg-gray-900/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white dark:hover:bg-gray-900 shadow-lg`}
+                      className={`swiper-button-prev-${index} absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-lg ring-1 ring-black/10 transition-opacity hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:bg-gray-900/95 dark:ring-white/10 dark:hover:bg-gray-900 md:opacity-0 md:group-hover/media:opacity-100 md:group-focus-within/media:opacity-100`}
                     >
-                      <ChevronLeft className="w-5 h-5 text-gray-900 dark:text-white" />
+                      <ChevronLeft className="h-5 w-5 text-gray-900 dark:text-white" />
                     </button>
                     <button
                       type="button"
                       aria-label={t("portfolio.media.nextScreenshot")}
-                      className={`swiper-button-next-${index} absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white dark:bg-gray-900/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white dark:hover:bg-gray-900 shadow-lg`}
+                      className={`swiper-button-next-${index} absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 shadow-lg ring-1 ring-black/10 transition-opacity hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary dark:bg-gray-900/95 dark:ring-white/10 dark:hover:bg-gray-900 md:opacity-0 md:group-hover/media:opacity-100 md:group-focus-within/media:opacity-100`}
                     >
-                      <ChevronRight className="w-5 h-5 text-gray-900 dark:text-white" />
+                      <ChevronRight className="h-5 w-5 text-gray-900 dark:text-white" />
                     </button>
                   </>
                 )}
 
                 {/* Overlay on Hover - csak ha nincs videó */}
                 {!videoUrl && screenshots.length > 0 && demoUrl && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-cyan-600/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                  <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-600/80 to-cyan-600/80 opacity-0 transition-opacity duration-300 group-hover/media:opacity-100">
                     <a
                       href={demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 bg-white dark:bg-gray-900 text-gray-900 dark:text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors pointer-events-auto"
+                      className="pointer-events-auto inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 font-semibold text-gray-900 transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
                     >
                       <span>{t("portfolio.ctaDemo")}</span>
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
                     </a>
                   </div>
                 )}
               </div>
 
               {/* Project Info */}
-              <div className="p-6">
+              <div className="flex min-w-0 flex-col p-6 sm:p-7 lg:p-8">
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="mb-5 flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="text-xs font-medium bg-primary/10 text-primary px-3 py-1 rounded-full"
+                      className="rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary dark:bg-blue-400/10 dark:text-blue-300"
                     >
                       {tag}
                     </span>
@@ -201,8 +202,8 @@ const Portfolio = () => {
 
                 {/* Title */}
                 {isLiveScheduler ? (
-                  <div className="mb-3 flex items-start justify-between gap-3">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  <div className="mb-4 flex items-start justify-between gap-3">
+                    <h3 className="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
                       {title}
                     </h3>
                     <span
@@ -214,13 +215,13 @@ const Portfolio = () => {
                     </span>
                   </div>
                 ) : (
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="mb-4 text-2xl font-bold leading-tight text-gray-900 dark:text-white">
                     {title}
                   </h3>
                 )}
 
                 {/* Description */}
-                <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                <p className="mb-6 text-sm leading-7 text-gray-600 dark:text-gray-300 sm:text-base">
                   {t(project.descriptionKey)}
                 </p>
 
@@ -293,16 +294,16 @@ const Portfolio = () => {
                 )}
 
                 {/* CTA Links */}
-                <div className="flex flex-wrap gap-3 items-center mt-2">
+                <div className="mt-auto flex flex-wrap items-center gap-3 border-t border-gray-100 pt-5 dark:border-gray-700/80">
                   {demoUrl && (
                     <a
                       href={demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 text-primary font-semibold hover:underline"
+                      className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-800"
                     >
                       <span>{t("portfolio.ctaDemo")}</span>
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
                     </a>
                   )}
                   {githubUrl && (
@@ -310,12 +311,12 @@ const Portfolio = () => {
                       href={githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 text-gray-500 dark:text-gray-300 font-semibold hover:text-primary hover:underline transition-colors"
+                      className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-semibold text-gray-700 transition-colors hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 dark:border-gray-600 dark:text-gray-200 dark:hover:text-blue-300 dark:focus-visible:ring-offset-gray-800"
                     >
                       <svg
                         viewBox="0 0 24 24"
                         fill="currentColor"
-                        className="w-5 h-5"
+                        className="h-5 w-5"
                       >
                         <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2Z" />
                       </svg>
