@@ -15,38 +15,38 @@
   },
   "why": {
     "title": "Über mich / Mein Engineering-Ansatz",
-    "intro": "Ich entwickle Full-Stack-Webanwendungen, integriere APIs und erstelle datengestützte Dashboards mit KI-Funktionen. Dabei lege ich Wert auf Datenvalidierung und eine wartbare Anwendungsarchitektur.",
+    "intro": "In drei Portfolio-Demos entwickle ich Full-Stack-Oberflächen, verbinde externe Datenquellen und mache Anwendungsabläufe zuverlässiger.",
     "feature1": {
       "title": "Full-Stack-Anwendungen",
-      "description": "Ich arbeite im Frontend und Backend und verbinde Benutzeroberflächen, Anwendungslogik und APIs."
+      "description": "React, Next.js und TypeScript bilden die Grundlage für den Scheduler, das APIB-Dashboard und das Forest-Stay-Demo."
     },
     "feature2": {
-      "title": "KI- und Datenfunktionen",
-      "description": "Ich entwickle datengestützte Dashboards und integriere KI-Funktionen in Webanwendungen."
+      "title": "APIs und Daten",
+      "description": "Die Projekte verbinden Binance, CoinGecko und Marktnachrichten. Geplante Beiträge und Demo-Reservierungen werden mit Supabase gespeichert."
     },
     "feature3": {
-      "title": "Validierung und Wartbarkeit",
-      "description": "Mit Validierung, Tests und modularer Architektur halte ich Anwendungscode verständlich und zuverlässig."
+      "title": "Validierung und Zuverlässigkeit",
+      "description": "Serverseitige Prüfungen und eine PostgreSQL-Exclusion-Constraint schützen Demo-Reservierungen in Forest Stay; der Scheduler nutzt authentifizierte, geplante Veröffentlichungen."
     }
   },
   "services": {
     "title": "Technische Kompetenzen",
-    "subtitle": "Fähigkeiten und Kenntnisse, die ich in meinen Projekten einsetze",
+    "subtitle": "Werkzeuge und Praktiken aus den drei vorgestellten Projekten",
     "service1": {
       "title": "Frontend",
-      "description": "React, Next.js, TypeScript und responsive Benutzeroberflächen."
+      "description": "React, Next.js und TypeScript im Scheduler, in APIB und im Forest-Stay-Demo."
     },
     "service2": {
       "title": "Backend & Daten",
-      "description": "API-Integration, Supabase, PostgreSQL, Authentifizierung und Datenverarbeitung."
+      "description": "Anbindungen an Binance, CoinGecko und Marktnachrichten sowie Supabase- und PostgreSQL-Speicherung für geplante Inhalte und Demo-Reservierungen."
     },
     "service3": {
-      "title": "KI-Integration",
-      "description": "LLM-APIs, Retrieval-Augmented Generation (RAG) und KI-Funktionen in Anwendungen."
+      "title": "KI- und Datenabläufe",
+      "description": "KI-gestützte Entwürfe für Social-Media-Beiträge und OpenAI-Marktanalysen mit deterministischer Bewertung."
     },
     "service4": {
-      "title": "Engineering-Praktiken",
-      "description": "TypeScript, Eingabevalidierung, Tests und modulare Anwendungsarchitektur."
+      "title": "Validierung & Wartbarkeit",
+      "description": "TypeScript, serverseitige Eingabevalidierung, Datenbank-Constraints und wartbare Abläufe, die gezielte Tests unterstützen."
     }
   },
   "portfolio": {

@@ -15,38 +15,38 @@
   },
   "why": {
     "title": "O meni / Inženjerski pristup",
-    "intro": "Razvijam full-stack veb aplikacije, integrišem API-je i pravim kontrolne table zasnovane na podacima sa AI funkcijama. Usredsređen sam na validaciju podataka i održivu arhitekturu aplikacija.",
+    "intro": "Kroz tri portfolio demo projekta razvijam full-stack interfejse, povezujem spoljne izvore podataka i činim tokove rada pouzdanijim.",
     "feature1": {
       "title": "Full-stack aplikacije",
-      "description": "Radim na frontend i backend delu, povezujući korisničke interfejse, logiku aplikacije i API-je."
+      "description": "Scheduler, APIB kontrolna tabla i Forest Stay demo koriste React, Next.js i TypeScript."
     },
     "feature2": {
-      "title": "AI funkcije i podaci",
-      "description": "Pravim kontrolne table zasnovane na podacima i integrišem AI funkcije u veb aplikacije."
+      "title": "API-ji i podaci",
+      "description": "Projekti povezuju Binance, CoinGecko i tržišne vesti; zakazane objave i demo rezervacije čuvaju se u Supabase-u."
     },
     "feature3": {
-      "title": "Validacija i održivost",
-      "description": "Koristim validaciju, testiranje i modularnu arhitekturu kako bi kod aplikacije bio razumljiv i pouzdan."
+      "title": "Validacija i pouzdanost",
+      "description": "Serverske provere i PostgreSQL ograničenje preklapanja štite demo rezervacije u Forest Stay-u; Scheduler koristi autentifikovano zakazano objavljivanje."
     }
   },
   "services": {
     "title": "Tehnička stručnost",
-    "subtitle": "Veštine i mogućnosti prikazane kroz moje projekte",
+    "subtitle": "Alati i prakse korišćeni u tri istaknuta projekta",
     "service1": {
       "title": "Frontend",
-      "description": "React, Next.js, TypeScript i responzivni korisnički interfejsi."
+      "description": "React, Next.js i TypeScript u projektima Scheduler, APIB i Forest Stay demo."
     },
     "service2": {
       "title": "Backend i podaci",
-      "description": "Integracija API-ja, Supabase, PostgreSQL, autentifikacija i tokovi podataka."
+      "description": "Povezivanje Binance-a, CoinGecko-a i tržišnih vesti; Supabase i PostgreSQL skladištenje zakazanog sadržaja i demo rezervacija."
     },
     "service3": {
-      "title": "AI integracija",
-      "description": "LLM API-ji, generisanje potpomognuto pretragom (RAG) i AI funkcije u aplikacijama."
+      "title": "AI i obrada podataka",
+      "description": "Izrada objava uz pomoć AI-ja i OpenAI analiza tržišta uz determinističko bodovanje."
     },
     "service4": {
-      "title": "Inženjerske prakse",
-      "description": "TypeScript, validacija unosa, testiranje i modularna arhitektura aplikacija."
+      "title": "Validacija i održivost",
+      "description": "TypeScript, serverska validacija unosa, ograničenja baze podataka i održivi tokovi rada pogodni za ciljano testiranje."
     }
   },
   "portfolio": {

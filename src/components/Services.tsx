@@ -9,68 +9,72 @@ const Services = () => {
       icon: Monitor,
       title: t("services.service1.title"),
       description: t("services.service1.description"),
-      gradient: "from-blue-500 to-cyan-500",
+      iconColor: "text-blue-700 dark:text-blue-300",
+      iconBg: "bg-blue-50 dark:bg-blue-400/10",
     },
     {
       icon: Database,
       title: t("services.service2.title"),
       description: t("services.service2.description"),
-      gradient: "from-purple-500 to-pink-500",
+      iconColor: "text-cyan-700 dark:text-cyan-300",
+      iconBg: "bg-cyan-50 dark:bg-cyan-400/10",
     },
     {
       icon: BrainCircuit,
       title: t("services.service3.title"),
       description: t("services.service3.description"),
-      gradient: "from-orange-500 to-red-500",
+      iconColor: "text-blue-700 dark:text-blue-300",
+      iconBg: "bg-blue-50 dark:bg-blue-400/10",
     },
     {
       icon: Blocks,
       title: t("services.service4.title"),
       description: t("services.service4.description"),
-      gradient: "from-green-500 to-emerald-500",
+      iconColor: "text-cyan-700 dark:text-cyan-300",
+      iconBg: "bg-cyan-50 dark:bg-cyan-400/10",
     },
   ];
 
   return (
     <section
       id="services"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
+      className="bg-gradient-to-b from-white to-gray-50 px-4 py-14 dark:from-gray-900 dark:to-gray-800 sm:px-6 sm:py-16 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fadeIn">
+        <div className="mb-10 text-center animate-fadeIn sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             {t("services.title")}
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-base leading-7 text-gray-600 dark:text-gray-300 sm:text-lg">
             {t("services.subtitle")}
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeIn border border-gray-100 dark:border-gray-800 hover:border-blue-200"
+                className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:border-primary/40 hover:shadow-lg dark:border-gray-700 dark:bg-gray-900 sm:p-7 motion-reduce:transform-none motion-reduce:transition-none animate-fadeIn"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Icon with Gradient */}
                 <div
-                  className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                  className={`mb-5 flex h-14 w-14 items-center justify-center rounded-xl ${service.iconBg} transition-transform duration-300 group-hover:scale-105 motion-reduce:transition-none`}
                 >
-                  <Icon className="w-8 h-8 text-white" />
+                  <Icon className={`h-7 w-7 ${service.iconColor}`} aria-hidden="true" />
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white sm:text-xl">
                   {service.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p className="text-sm leading-6 text-gray-600 dark:text-gray-300 sm:text-base sm:leading-7">
                   {service.description}
                 </p>
               </div>

@@ -15,38 +15,38 @@
   },
   "why": {
     "title": "About Me / Engineering Approach",
-    "intro": "I build full-stack web applications, integrate APIs, and create data-driven dashboards with AI features. I focus on validating data and building maintainable application architecture.",
+    "intro": "Across three portfolio demos, I build full-stack interfaces, connect external data, and make application workflows more reliable.",
     "feature1": {
-      "title": "Full-Stack Applications",
-      "description": "I work across frontend and backend, connecting interfaces, application logic, and APIs."
+      "title": "Full-stack applications",
+      "description": "React, Next.js, and TypeScript power the Scheduler, APIB dashboard, and Forest Stay demo."
     },
     "feature2": {
-      "title": "AI and Data Features",
-      "description": "I build data-driven dashboards and integrate AI features into web applications."
+      "title": "APIs and data",
+      "description": "Projects connect Binance, CoinGecko, and market news, with Supabase persistence for scheduled posts and demo reservations."
     },
     "feature3": {
-      "title": "Validation and Maintainability",
-      "description": "I use validation, testing, and modular architecture to keep application code understandable and dependable."
+      "title": "Validation and reliability",
+      "description": "Server-side checks and a PostgreSQL overlap constraint protect Forest Stay demo reservations; the Scheduler uses authenticated scheduled publishing."
     }
   },
   "services": {
     "title": "Technical Expertise",
-    "subtitle": "Skills and capabilities demonstrated in my projects",
+    "subtitle": "Tools and practices used across the three featured projects",
     "service1": {
       "title": "Frontend",
-      "description": "React, Next.js, TypeScript, and responsive user interfaces."
+      "description": "React, Next.js, and TypeScript across the Scheduler, APIB, and Forest Stay demo."
     },
     "service2": {
       "title": "Backend & Data",
-      "description": "API integration, Supabase, PostgreSQL, authentication, and data workflows."
+      "description": "Binance, CoinGecko, and news integrations; Supabase and PostgreSQL persistence for scheduled content and demo reservations."
     },
     "service3": {
-      "title": "AI Integration",
-      "description": "LLM APIs, retrieval-augmented generation (RAG), and AI-powered application features."
+      "title": "AI and data workflows",
+      "description": "AI-assisted social post drafting and OpenAI market analysis paired with deterministic scoring."
     },
     "service4": {
-      "title": "Engineering Practices",
-      "description": "TypeScript, input validation, testing, and modular application architecture."
+      "title": "Validation & maintainability",
+      "description": "TypeScript, server-side input validation, database constraints, and workflows structured for maintainability and focused testing."
     }
   },
   "portfolio": {

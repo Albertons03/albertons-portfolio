@@ -15,38 +15,38 @@
   },
   "why": {
     "title": "Rólam / Mérnöki szemlélet",
-    "intro": "Full-stack webalkalmazásokat fejlesztek, API-kat integrálok, és MI-funkciókkal rendelkező, adatalapú irányítópultokat készítek. Fontosnak tartom az adatok validálását és a jól karbantartható alkalmazás-architektúrát.",
+    "intro": "Három portfóliódemóban full-stack felületeket fejlesztek, külső adatforrásokat kapcsolok össze, és megbízhatóbbá teszem az alkalmazásfolyamatokat.",
     "feature1": {
       "title": "Full-stack alkalmazások",
-      "description": "A frontend és a backend területén is dolgozom, összekapcsolva a felhasználói felületeket, az alkalmazáslogikát és az API-kat."
+      "description": "A Scheduler, az APIB irányítópult és a Forest Stay demó React, Next.js és TypeScript használatával készült."
     },
     "feature2": {
-      "title": "MI- és adatfunkciók",
-      "description": "Adatalapú irányítópultokat készítek, és MI-funkciókat integrálok webalkalmazásokba."
+      "title": "API-k és adatok",
+      "description": "A projektek Binance-, CoinGecko- és piaci hírforrásokat kapcsolnak össze; az ütemezett bejegyzések és demófoglalások Supabase-ben tárolódnak."
     },
     "feature3": {
-      "title": "Validálás és karbantarthatóság",
-      "description": "Validálással, teszteléssel és moduláris architektúrával átlátható és megbízható alkalmazáskódra törekszem."
+      "title": "Validálás és megbízhatóság",
+      "description": "Szerveroldali ellenőrzések és PostgreSQL-átfedési megkötés védik a Forest Stay demófoglalásait; a Scheduler hitelesített, ütemezett közzétételt használ."
     }
   },
   "services": {
     "title": "Technikai szaktudás",
-    "subtitle": "Készségek és képességek, amelyeket a projektjeimben alkalmazok",
+    "subtitle": "A három kiemelt projektben használt eszközök és gyakorlatok",
     "service1": {
       "title": "Frontend",
-      "description": "React, Next.js, TypeScript és reszponzív felhasználói felületek."
+      "description": "React, Next.js és TypeScript a Schedulerben, az APIB-ben és a Forest Stay demóban."
     },
     "service2": {
       "title": "Backend és adatok",
-      "description": "API-integráció, Supabase, PostgreSQL, hitelesítés és adatfolyamatok."
+      "description": "Binance-, CoinGecko- és hírforrás-integráció; Supabase- és PostgreSQL-adattárolás ütemezett tartalmakhoz és demófoglalásokhoz."
     },
     "service3": {
-      "title": "MI-integráció",
-      "description": "LLM API-k, visszakereséssel kiegészített generálás (RAG) és MI-alapú alkalmazásfunkciók."
+      "title": "MI- és adatfolyamatok",
+      "description": "MI-vel támogatott közösségimédia-bejegyzések készítése és OpenAI-piacelemzés determinisztikus pontozással."
     },
     "service4": {
-      "title": "Szoftverfejlesztési gyakorlatok",
-      "description": "TypeScript, bemenetvalidálás, tesztelés és moduláris alkalmazás-architektúra."
+      "title": "Validálás és karbantarthatóság",
+      "description": "TypeScript, szerveroldali bemenetellenőrzés, adatbázis-megkötések és karbantartható, célzott tesztelést támogató folyamatok."
     }
   },
   "portfolio": {
