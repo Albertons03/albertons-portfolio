@@ -218,7 +218,7 @@
   },
   "contact": {
     "title": "Dolgozzunk Együtt",
-    "subtitle": "Kezdd el a projektedet még ma",
+    "subtitle": "Írd meg, milyen projektet tervezel.",
     "form": {
       "name": "Neved",
       "email": "Email címed",
@@ -233,7 +233,21 @@
       "notes": "Extra megjegyzés",
       "send": "Üzenet küldése"
     },
+    "validation": {
+      "name": "A név legalább 2 karakterből álljon.",
+      "email": "Adj meg egy érvényes e-mail-címet.",
+      "projectGoal": "Legalább 5 karakterben írd le a projekt célját.",
+      "pagesNeeded": "Add meg, milyen oldalakra van szükséged.",
+      "features": "Add meg, milyen funkciókra van szükséged.",
+      "hasDomain": "Válassz egy lehetőséget."
+    },
+    "sending": "Küldés...",
+    "sent": "Az üzenet elküldve!",
+    "submitError": "Hiba történt. Kérjük, próbáld meg később újra.",
+    "infoTitle": "A projekt részletei",
+    "infoDescription": "Írj néhány részletet arról, milyen projektet szeretnél megvalósítani.",
     "whatsapp": "WhatsApp",
+    "whatsappDescription": "Írj üzenetet WhatsAppon.",
     "phone": "Hívj Fel"
   },
   "footer": {

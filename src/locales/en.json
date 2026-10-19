@@ -218,7 +218,7 @@
   },
   "contact": {
     "title": "Let's Work Together",
-    "subtitle": "Get your project started today",
+    "subtitle": "Tell me about the project you're planning.",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
@@ -233,7 +233,21 @@
       "notes": "Extra notes",
       "send": "Send Message"
     },
+    "validation": {
+      "name": "Enter at least 2 characters for your name.",
+      "email": "Enter a valid email address.",
+      "projectGoal": "Describe your project goal in at least 5 characters.",
+      "pagesNeeded": "Specify the pages you need.",
+      "features": "Specify the features you need.",
+      "hasDomain": "Select an option."
+    },
+    "sending": "Sending...",
+    "sent": "Message Sent!",
+    "submitError": "Something went wrong. Please try again later.",
+    "infoTitle": "Project details",
+    "infoDescription": "Share a few details about what you're looking to build.",
     "whatsapp": "WhatsApp",
+    "whatsappDescription": "Send a message via WhatsApp.",
     "phone": "Call Me"
   },
   "footer": {

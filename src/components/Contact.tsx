@@ -53,29 +53,29 @@ const Contact = () => {
 
     // Validation
     if (formData.name.trim().length < 2) {
-      newErrors.name = "Name must be at least 2 characters";
+      newErrors.name = t("contact.validation.name");
       isValid = false;
     }
 
     if (!validateEmail(formData.email)) {
-      newErrors.email = "Please enter a valid email";
+      newErrors.email = t("contact.validation.email");
       isValid = false;
     }
 
     if (formData.projectGoal.trim().length < 5) {
-      newErrors.projectGoal = "Please describe your project goal";
+      newErrors.projectGoal = t("contact.validation.projectGoal");
       isValid = false;
     }
     if (formData.pagesNeeded.trim().length < 2) {
-      newErrors.pagesNeeded = "Please specify needed pages";
+      newErrors.pagesNeeded = t("contact.validation.pagesNeeded");
       isValid = false;
     }
     if (formData.features.trim().length < 2) {
-      newErrors.features = "Please specify features";
+      newErrors.features = t("contact.validation.features");
       isValid = false;
     }
     if (!formData.hasDomain) {
-      newErrors.hasDomain = "Please select an option";
+      newErrors.hasDomain = t("contact.validation.hasDomain");
       isValid = false;
     }
     // exampleSites, deadline, notes are optional
@@ -140,9 +140,7 @@ const Contact = () => {
         .catch((error) => {
           console.error("Error:", error);
           setIsSubmitting(false);
-          alert(
-            "Something went wrong. Please try again or contact via WhatsApp."
-          );
+          alert(t("contact.submitError"));
         });
     }
   };
@@ -431,12 +429,12 @@ const Contact = () => {
                       size="sm"
                       className="border-white border-t-transparent"
                     />
-                    <span>Sending...</span>
+                    <span>{t("contact.sending")}</span>
                   </>
                 ) : isSuccess ? (
                   <>
                     <CheckCircle className="w-5 h-5" />
-                    <span>Message Sent!</span>
+                    <span>{t("contact.sent")}</span>
                   </>
                 ) : (
                   <>
@@ -468,7 +466,7 @@ const Contact = () => {
                   {t("contact.whatsapp")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Quick response, 24/7
+                  {t("contact.whatsappDescription")}
                 </p>
               </div>
             </a>
@@ -494,11 +492,10 @@ const Contact = () => {
             {/* Additional Info Card */}
             <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-900 dark:to-gray-800 rounded-xl border-2 border-blue-200 dark:border-gray-700">
               <h3 className="font-bold text-gray-900 dark:text-white mb-3">
-                💡 Free Consultation
+                💡 {t("contact.infoTitle")}
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                Not sure what you need? Book a free 30-minute consultation and
-                let's discuss your project goals.
+                {t("contact.infoDescription")}
               </p>
             </div>
           </div>

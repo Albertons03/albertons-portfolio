@@ -218,14 +218,36 @@
   },
   "contact": {
     "title": "Hajde Da Sarađujemo",
-    "subtitle": "Započnite svoj projekat danas",
+    "subtitle": "Recite mi nešto o projektu koji planirate.",
     "form": {
       "name": "Vaše Ime",
       "email": "Vaš Email",
-      "message": "Recite mi o svom projektu",
+      "projectGoal": "Koji je cilj vašeg projekta?",
+      "pagesNeeded": "Koje stranice su vam potrebne?",
+      "features": "Koje funkcionalnosti su vam potrebne?",
+      "hasDomain": "Da li imate domen i hosting?",
+      "hasDomainYes": "Da",
+      "hasDomainNo": "Ne",
+      "exampleSites": "Primeri sajtova (linkovi)",
+      "deadline": "Rok",
+      "notes": "Dodatne napomene",
       "send": "Pošalji Poruku"
     },
+    "validation": {
+      "name": "Unesite najmanje 2 znaka za ime.",
+      "email": "Unesite važeću imejl adresu.",
+      "projectGoal": "Opišite cilj projekta sa najmanje 5 znakova.",
+      "pagesNeeded": "Navedite koje stranice su vam potrebne.",
+      "features": "Navedite koje funkcionalnosti su vam potrebne.",
+      "hasDomain": "Izaberite jednu opciju."
+    },
+    "sending": "Slanje...",
+    "sent": "Poruka je poslata!",
+    "submitError": "Došlo je do greške. Pokušajte ponovo kasnije.",
+    "infoTitle": "Detalji projekta",
+    "infoDescription": "Napišite nekoliko detalja o projektu koji želite da napravite.",
     "whatsapp": "WhatsApp",
+    "whatsappDescription": "Pošaljite poruku putem WhatsAppa.",
     "phone": "Pozovi Me"
   },
   "footer": {

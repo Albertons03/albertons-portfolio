@@ -218,14 +218,36 @@
   },
   "contact": {
     "title": "Lassen Sie Uns Zusammenarbeiten",
-    "subtitle": "Starten Sie Ihr Projekt heute",
+    "subtitle": "Erzählen Sie mir von Ihrem geplanten Projekt.",
     "form": {
       "name": "Ihr Name",
       "email": "Ihre E-Mail",
-      "message": "Erzählen Sie mir von Ihrem Projekt",
+      "projectGoal": "Was ist das Ziel Ihres Projekts?",
+      "pagesNeeded": "Welche Seiten benötigen Sie?",
+      "features": "Welche Funktionen benötigen Sie?",
+      "hasDomain": "Haben Sie eine Domain oder ein Hosting?",
+      "hasDomainYes": "Ja",
+      "hasDomainNo": "Nein",
+      "exampleSites": "Beispiel-Websites (Links)",
+      "deadline": "Zeitplan",
+      "notes": "Zusätzliche Hinweise",
       "send": "Nachricht Senden"
     },
+    "validation": {
+      "name": "Geben Sie mindestens 2 Zeichen für Ihren Namen ein.",
+      "email": "Geben Sie eine gültige E-Mail-Adresse ein.",
+      "projectGoal": "Beschreiben Sie Ihr Projektziel mit mindestens 5 Zeichen.",
+      "pagesNeeded": "Geben Sie an, welche Seiten Sie benötigen.",
+      "features": "Geben Sie an, welche Funktionen Sie benötigen.",
+      "hasDomain": "Wählen Sie eine Option aus."
+    },
+    "sending": "Wird gesendet...",
+    "sent": "Nachricht gesendet!",
+    "submitError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
+    "infoTitle": "Projektdetails",
+    "infoDescription": "Teilen Sie mir ein paar Details zu Ihrem geplanten Projekt mit.",
     "whatsapp": "WhatsApp",
+    "whatsappDescription": "Schreiben Sie mir über WhatsApp.",
     "phone": "Anrufen"
   },
   "footer": {
