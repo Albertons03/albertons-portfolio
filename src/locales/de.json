@@ -8,9 +8,10 @@
   },
   "hero": {
     "headline": "Full-Stack- und KI-Anwendungsentwickler",
-    "subheading": "Ich entwickle Full-Stack-Webanwendungen, KI-gestützte Tools und datengestützte Dashboards mit React, Next.js, TypeScript und Python.",
+    "subheading": "Ich entwickle Full-Stack-Anwendungen mit React, Next.js und TypeScript und verbinde APIs und Datenbanken mit praxisnahen KI-Integrationen.",
     "ctaProjects": "Projekte ansehen",
-    "ctaGithub": "GitHub ansehen"
+    "ctaGithub": "GitHub ansehen",
+    "visualAlt": "Startseite des fiktiven Hüttenbuchungs-Demos Forest Stay"
   },
   "why": {
     "title": "Über mich / Mein Engineering-Ansatz",

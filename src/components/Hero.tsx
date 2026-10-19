@@ -7,114 +7,48 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 relative overflow-hidden transition-colors duration-300"
+      className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-cyan-50 px-4 pb-16 pt-28 transition-colors duration-300 dark:from-slate-950 dark:via-gray-900 dark:to-slate-900 sm:px-6 sm:pb-24 sm:pt-36 lg:px-8"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-10 animate-fadeIn">
-          {/* Left: Text + Logo */}
-          <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
-            {/* Logo */}
-            <img
-              src="/logo5.svg"
-              alt="Albertons Studio Logo"
-              className="h-14 w-auto mb-6"
-            />
+      <div className="mx-auto grid max-w-7xl min-w-0 items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14">
+        <div className="min-w-0 max-w-2xl">
+          <h1 className="max-w-[16ch] break-words text-4xl font-bold leading-[1.08] tracking-[-0.04em] text-slate-950 dark:text-white sm:text-5xl lg:text-6xl">
+            <span className="bg-gradient-to-r from-blue-700 to-cyan-600 bg-clip-text text-transparent dark:from-blue-300 dark:to-cyan-300">
+              {t("hero.headline")}
+            </span>
+          </h1>
 
-            {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(59,130,246,0.3)]">
-                {t("hero.headline")}
-              </span>
-            </h1>
+          <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 dark:text-slate-300 sm:text-lg sm:leading-8">
+            {t("hero.subheading")}
+          </p>
 
-            {/* Subheading */}
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl">
-              {t("hero.subheading")}
-            </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#portfolio"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3.5 font-semibold text-white shadow-lg shadow-blue-950/10 transition-colors hover:bg-primary/90 motion-reduce:transition-none sm:w-auto"
+            >
+              <span>{t("hero.ctaProjects")}</span>
+              <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            </a>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-8">
-              <a
-                href="#portfolio"
-                className="group inline-flex items-center space-x-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                <span>{t("hero.ctaProjects")}</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-
-              <a
-                href="https://github.com/Albertons03"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white px-8 py-4 rounded-lg font-semibold border-2 border-gray-200 dark:border-gray-700 hover:border-primary hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg"
-              >
-                <Github className="w-5 h-5" />
-                <span>{t("hero.ctaGithub")}</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Right: Overlapping Project Images + GIF */}
-          <div className="flex-1 flex flex-col md:flex-row justify-center md:justify-end items-center relative min-h-[260px] w-full md:w-auto mb-10 md:mb-0 gap-6">
-            {/* Overlapping images container */}
-            <div className="relative w-[340px] h-[220px] hidden md:block">
-              {/* First image */}
-              <img
-                src="/hiro1.png"
-                alt="Project 1"
-                className="w-[260px] h-[160px] rounded-xl shadow-xl object-cover absolute left-0 top-8 z-10 border-4 border-white dark:border-gray-900 rotate-[-8deg] transition-transform duration-300 hover:scale-105"
-                style={{ boxShadow: "0 8px 32px 0 rgba(0,0,0,0.10)" }}
-              />
-              {/* Second image */}
-              <img
-                src="/hiro2.png"
-                alt="Project 2"
-                className="w-[220px] h-[140px] rounded-xl shadow-lg object-cover absolute left-20 top-0 z-20 border-4 border-white dark:border-gray-900 rotate-[7deg] transition-transform duration-300 hover:scale-105"
-                style={{ boxShadow: "0 8px 32px 0 rgba(0,0,0,0.12)" }}
-              />
-              {/* Third image, further offset */}
-              <img
-                src="/hero3.png"
-                alt="Project 3"
-                className="w-[180px] h-[110px] rounded-xl shadow-md object-cover absolute left-36 top-16 z-30 border-4 border-white dark:border-gray-900 rotate-[-4deg] transition-transform duration-300 hover:scale-105"
-                style={{ boxShadow: "0 8px 24px 0 rgba(0,0,0,0.10)" }}
-              />
-            </div>
-            {/* Responsive fallback for mobile: stack images */}
-            <div className="md:hidden flex flex-col gap-4 w-full items-center relative">
-              <img
-                src="/hiro1.png"
-                alt="Project 1"
-                className="w-[90%] max-w-xs rounded-xl shadow-xl object-cover border-4 border-white dark:border-gray-900"
-              />
-              <img
-                src="/hiro2.png"
-                alt="Project 2"
-                className="w-[80%] max-w-xs rounded-xl shadow-lg object-cover border-4 border-white dark:border-gray-900"
-              />
-              <img
-                src="/hero3.png"
-                alt="Project 3"
-                className="w-[70%] max-w-xs rounded-xl shadow-md object-cover border-4 border-white dark:border-gray-900"
-              />
-            </div>
-            {/* GIF or video on the right (desktop only) */}
-            <div className="hidden md:flex items-center justify-center ml-4">
-              <img
-                src="/hero3video.gif"
-                alt="Project Animation"
-                className="w-[180px] h-[180px] rounded-2xl shadow-lg object-cover border-4 border-white dark:border-gray-900 bg-white dark:bg-gray-900"
-                style={{ boxShadow: "0 8px 32px 0 rgba(0,0,0,0.10)" }}
-              />
-            </div>
+            <a
+              href="https://github.com/Albertons03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white/80 px-6 py-3.5 font-semibold text-slate-800 transition-colors hover:border-primary hover:text-primary motion-reduce:transition-none dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-100 sm:w-auto"
+            >
+              <Github className="h-5 w-5" aria-hidden="true" />
+              <span>{t("hero.ctaGithub")}</span>
+            </a>
           </div>
         </div>
-        {/* Optional: Animated background elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl -z-10 animate-float" />
-        <div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 animate-float"
-          style={{ animationDelay: "1s" }}
-        />
+
+        <figure className="mx-auto w-full max-w-xl rounded-2xl border border-slate-200/80 bg-white/70 p-2 shadow-2xl shadow-slate-950/10 dark:border-slate-700/80 dark:bg-slate-800/70 sm:rounded-3xl sm:p-3 lg:max-w-none">
+          <img
+            src="/projects/forest-stay/homepage.png"
+            alt={t("hero.visualAlt")}
+            className="aspect-[4/3] w-full rounded-xl object-cover object-top sm:rounded-2xl"
+          />
+        </figure>
       </div>
     </section>
   );

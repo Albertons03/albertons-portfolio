@@ -8,9 +8,10 @@
   },
   "hero": {
     "headline": "Full-Stack & AI Application Developer",
-    "subheading": "I build full-stack web applications, AI-powered tools, and data-driven dashboards using React, Next.js, TypeScript, and Python.",
+    "subheading": "I build full-stack applications with React, Next.js and TypeScript, connecting APIs and databases with practical AI integrations.",
     "ctaProjects": "View Projects",
-    "ctaGithub": "View GitHub"
+    "ctaGithub": "View GitHub",
+    "visualAlt": "Forest Stay fictional cabin-booking demo homepage"
   },
   "why": {
     "title": "About Me / Engineering Approach",

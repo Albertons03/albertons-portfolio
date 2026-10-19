@@ -7,10 +7,11 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "headline": "Full-stack i AI programer aplikacija",
-    "subheading": "Razvijam full-stack veb aplikacije, alate pokretane veštačkom inteligencijom i kontrolne table zasnovane na podacima koristeći React, Next.js, TypeScript i Python.",
+    "headline": "Programer full-stack aplikacija i AI rešenja",
+    "subheading": "Razvijam full-stack aplikacije pomoću Reacta, Next.js-a i TypeScripta, povezujući API-je i baze podataka sa praktičnim AI integracijama.",
     "ctaProjects": "Pogledaj projekte",
-    "ctaGithub": "Pogledaj GitHub"
+    "ctaGithub": "Pogledaj GitHub",
+    "visualAlt": "Početna stranica fiktivnog demo projekta Forest Stay za rezervaciju kabina"
   },
   "why": {
     "title": "O meni / Inženjerski pristup",

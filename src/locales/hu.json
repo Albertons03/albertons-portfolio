@@ -7,10 +7,11 @@
     "contact": "Kapcsolat"
   },
   "hero": {
-    "headline": "Full-Stack és MI-alkalmazásfejlesztő",
-    "subheading": "React, Next.js, TypeScript és Python használatával full-stack webalkalmazásokat, MI-alapú eszközöket és adatalapú irányítópultokat fejlesztek.",
+    "headline": "Full-stack és MI-alapú alkalmazások fejlesztője",
+    "subheading": "React, Next.js és TypeScript használatával full-stack alkalmazásokat fejlesztek, API-kat és adatbázisokat gyakorlati MI-integrációkkal összekapcsolva.",
     "ctaProjects": "Projektek megtekintése",
-    "ctaGithub": "GitHub megtekintése"
+    "ctaGithub": "GitHub megtekintése",
+    "visualAlt": "A Forest Stay fiktív faházfoglalási demójának kezdőlapja"
   },
   "why": {
     "title": "Rólam / Mérnöki szemlélet",
