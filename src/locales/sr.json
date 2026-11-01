@@ -105,6 +105,10 @@
         ]
       }
     },
+    "commerce-v2": {
+      "title": "AI Commerce Assistant V2",
+      "description": "AI asistent za proizvode u e-trgovini, napravljen pomoću Next.js 16, TypeScript-a, Supabase Auth/PostgreSQL-a sa pgvector-om, OpenAI API-ja i RAG-a. Nudi semantičku vektorsku pretragu sa filtriranjem po kategoriji i ceni u demo katalogu od 32 proizvoda, kao i CSV masovni uvoz sa pregledom validacije, generisanjem embeddinga i čuvanjem proizvoda. Lokalni RAG čet je uspešno testiran. Status: u razvoju; još nema javnog deploymenta."
+    },
     "ai-powered-customer-support-saas": {
       "title": "SaaS za korisničku podršku uz AI",
       "description": "Full-stack SaaS aplikacija napravljena uz React, FastAPI, Supabase i OpenAI. Korisnici mogu da razgovaraju sa AI-jem 24 sata dnevno, a sve poruke se čuvaju.",

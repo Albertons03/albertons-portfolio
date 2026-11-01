@@ -105,6 +105,10 @@
         ]
       }
     },
+    "commerce-v2": {
+      "title": "AI Commerce Assistant V2",
+      "description": "AI-powered e-commerce product assistant built with Next.js 16, TypeScript, Supabase Auth/PostgreSQL with pgvector, the OpenAI API and RAG. Offers semantic vector search with category and price filtering over a 32-product demo catalog, plus CSV bulk ingestion with validation preview, embedding generation and product persistence. Local RAG chat tested successfully. Status: In Development; no public deployment yet."
+    },
     "ai-powered-customer-support-saas": {
       "title": "AI-Powered Customer Support SaaS",
       "description": "Full-stack SaaS application with React, FastAPI, Supabase & OpenAI. Users can chat with AI 24/7, all messages saved.",

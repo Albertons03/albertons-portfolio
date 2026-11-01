@@ -56,4 +56,25 @@ export const projects: PortfolioProject[] = [
       "Zod",
     ],
   },
+  {
+    id: "commerce-v2",
+    status: "in-development",
+    tier: "featured",
+    titleKey: "projects.commerce-v2.title",
+    descriptionKey: "projects.commerce-v2.description",
+    images: [
+      "/projects/commerce-v2-product-catalog.png",
+      "/projects/commerce-v2-ai-chat.png",
+      "/projects/commerce-v2-csv-validation.png",
+    ],
+    tags: [
+      "Next.js 16",
+      "TypeScript",
+      "Supabase",
+      "pgvector",
+      "OpenAI API",
+      "RAG",
+    ],
+    github: "https://github.com/Albertons03/commerce-v2",
+  },
 ];

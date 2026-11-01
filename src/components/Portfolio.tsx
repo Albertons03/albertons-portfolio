@@ -98,7 +98,6 @@ const Portfolio = () => {
             const demoUrl = getValidHttpUrl(project.demoUrl);
             const githubUrl = getValidHttpUrl(project.github);
             const screenshots = project.images ?? [];
-            const isForestStay = project.id === "forest-stay-v1";
             const isLiveScheduler =
               project.id === "ai-social-media-scheduler" &&
               project.status === "live";
@@ -106,20 +105,12 @@ const Portfolio = () => {
             return (
               <div
                 key={project.id}
-                className={`group/card overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:border-gray-700/80 dark:bg-gray-800/70 md:rounded-3xl md:hover:-translate-y-1 ${
-                  isForestStay
-                    ? "md:col-span-2 md:grid md:grid-cols-2 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]"
-                    : ""
-                }`}
+                className={`group/card overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:border-gray-700/80 dark:bg-gray-800/70 md:rounded-3xl                 md:hover:-translate-y-1 flex flex-col`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
               {/* Project Video or Image Carousel */}
               <div
-                className={`group/media relative aspect-[16/10] overflow-hidden bg-gray-100 dark:bg-gray-900/70 ${
-                  isForestStay
-                    ? "lg:aspect-auto lg:h-[26rem] lg:min-h-0"
-                    : ""
-                }`}
+                className={`group/media relative aspect-[16/10] overflow-hidden bg-gray-100                 dark:bg-gray-900/70`}
               >
                 {videoUrl ? (
                   /* Loom Video Embed */
@@ -208,7 +199,7 @@ const Portfolio = () => {
               </div>
 
               {/* Project Info */}
-              <div className="flex min-w-0 flex-col p-6 sm:p-7 lg:p-8">
+              <div className="flex min-w-0 flex-1 flex-col p-6 sm:p-7 lg:p-8">
                 {/* Tags */}
                 <div className="mb-5 flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (

@@ -105,6 +105,10 @@
         ]
       }
     },
+    "commerce-v2": {
+      "title": "AI Commerce Assistant V2",
+      "description": "KI-gestützter E-Commerce-Produktassistent, entwickelt mit Next.js 16, TypeScript, Supabase Auth/PostgreSQL mit pgvector, der OpenAI API und RAG. Bietet semantische Vektorsuche mit Kategorie- und Preisfilter über einen Demo-Katalog mit 32 Produkten sowie CSV-Massenimport mit Validierungsvorschau, Embedding-Erzeugung und Speicherung der Produkte. Der lokale RAG-Chat wurde erfolgreich getestet. Status: In Entwicklung; noch kein öffentliches Deployment."
+    },
     "ai-powered-customer-support-saas": {
       "title": "SaaS für KI-gestützten Kundensupport",
       "description": "Full-Stack-SaaS-Anwendung mit React, FastAPI, Supabase und OpenAI. Nutzer können rund um die Uhr mit einer KI chatten; alle Nachrichten werden gespeichert.",

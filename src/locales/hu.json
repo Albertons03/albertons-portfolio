@@ -105,6 +105,10 @@
         ]
       }
     },
+    "commerce-v2": {
+      "title": "AI Commerce Assistant V2",
+      "description": "MI-alapú webshop-termékasszisztens Next.js 16, TypeScript, Supabase Auth/PostgreSQL (pgvector), OpenAI API és RAG használatával. Szemantikus vektoros keresést kínál kategória- és ár szerinti szűréssel egy 32 termékes demókatalógusban, valamint CSV tömeges importot érvényesítési előnézettel, embedding-generálással és a termékek mentésével. A helyi RAG-csevegés sikeresen tesztelve. Állapot: fejlesztés alatt; még nincs nyilvános telepítés."
+    },
     "ai-powered-customer-support-saas": {
       "title": "MI-alapú ügyfélszolgálati SaaS",
       "description": "Full-stack SaaS-alkalmazás React, FastAPI, Supabase és OpenAI használatával. A felhasználók a nap 24 órájában cseveghetnek az MI-vel, az összes üzenet mentésre kerül.",
